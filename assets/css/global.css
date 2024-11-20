@@ -38,3 +38,10 @@
 .btn-green:hover {
   background-color: var(--primary-hover);
 }
+
+header .lower-nav .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
