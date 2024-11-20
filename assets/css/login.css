@@ -1,11 +1,4 @@
-.auth-container {
-  background-color: var(--bg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 89dvh;
-  padding: 3rem 0 3rem 0;
-}
+
 
 .container {
   width: 700px;
@@ -47,39 +40,7 @@ form.active {
   display: block;
 }
 
-.form-group {
-  margin-top: 15px;
-  /* margin-bottom: 15px; */
-  width: 45%;
-}
 
-.form-group {
-  position: relative;
-}
-
-.form-group label,
-.form-group1 label {
-  position: absolute;
-  left: 5%;
-  top: 15%;
-  padding: 0 10px 0 10px;
-  transform: translate(10px, -20px);
-  transition: 0.5s ease;
-  background-color: var(--white);
-  font-size: small;
-}
-
-input:focus + .form-group label,
-.form-group1 label,
-input:valid + .form-group label,
-.form-group1 label {
-  /* box-shadow: 2px 2px 10px whitesmoke; */
-  font-size: smaller;
-  border-radius: 5px;
-  padding: 0 10px 0 10px;
-  transform: translate(10px, -20px);
-  transition: 0.5s ease;
-}
 
 .form-group img {
   width: 19px;
@@ -98,14 +59,7 @@ label {
   /* margin-bottom: 5px; */
 }
 
-input,
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--bg-light);
-  border-radius: 5px;
-  background: transparent;
-}
+
 
 .form-footer {
   text-align: center;
@@ -117,18 +71,7 @@ select {
   text-decoration: none;
 }
 
-.register-container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 0px 30px;
-}
 
-.register-container .row {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
 
 .terms-check {
   display: flex;
