@@ -1,0 +1,40 @@
+:root {
+  --primary: #4caf50;
+  --primary-hover: #45a049;
+  --white: #fff;
+  --bg: #f4f4f4;
+  --bg-light: #ccc;
+  --link-color: #007bff;
+}
+
+/* Root CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* Container */
+.container {
+  width: 700px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn-green {
+  width: 45%;
+  padding: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background-color: var(--primary-hover);
+}

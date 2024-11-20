@@ -1,0 +1,167 @@
+.auth-container {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 89dvh;
+  padding: 3rem 0 3rem 0;
+}
+
+.container {
+  width: 700px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.tab.active {
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+form {
+  display: none;
+}
+
+form.active {
+  display: block;
+}
+
+.form-group {
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+  width: 45%;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label,
+.form-group1 label {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  padding: 0 10px 0 10px;
+  transform: translate(10px, -20px);
+  transition: 0.5s ease;
+  background-color: var(--white);
+  font-size: small;
+}
+
+input:focus + .form-group label,
+.form-group1 label,
+input:valid + .form-group label,
+.form-group1 label {
+  /* box-shadow: 2px 2px 10px whitesmoke; */
+  font-size: smaller;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  transform: translate(10px, -20px);
+  transition: 0.5s ease;
+}
+
+.form-group img {
+  width: 19px;
+  position: absolute;
+  right: 15px;
+  top: 30%;
+  cursor: pointer;
+}
+
+.pass {
+  padding-right: 45px;
+}
+
+label {
+  display: block;
+  /* margin-bottom: 5px; */
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--bg-light);
+  border-radius: 5px;
+  background: transparent;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0px 30px;
+}
+
+.register-container .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.terms-check {
+  display: flex;
+  align-items: center;
+}
+
+.terms-check input[type="checkbox"] {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.terms-check label {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.terms-check label a {
+  color: var(--link-color); /* Link color */
+  text-decoration: none;
+}
+
+.terms-check label a:hover {
+  text-decoration: underline;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.row > button {
+  margin: auto;
+}
