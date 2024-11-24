@@ -7,6 +7,9 @@
   --bg: #f4f4f4;
   --bg-light: #ccc;
   --link-color: #007bff;
+  --gray:#959595;
+  --lightgreen:#D9F2D0;
+  --lightgray: #EAE7E7;
   --gray: #959595;
 }
 
@@ -44,6 +47,7 @@
   color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: medium;
   cursor: pointer;
 }
 .btn-gray {
@@ -54,6 +58,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: medium;
 }
 
 .btn-green:hover {
@@ -108,6 +113,8 @@ header .lower-nav .profile-container .notification .notification-icon {
 .register-container {
   display: flex;
   flex-direction: column;
+  /* justify-content: space-evenly; */
+  /* border: 2px solid black; */
   gap: 50px;
   padding: 0px 30px;
 }
@@ -143,6 +150,7 @@ header .lower-nav .profile-container .notification .notification-icon {
   border: 1px solid var(--bg-light);
   border-radius: 5px;
   background: transparent;
+  cursor: pointer;
 }
 
 .side-nav-container {
@@ -185,4 +193,4 @@ header .lower-nav .profile-container .notification .notification-icon {
   font-size: small;
   padding-left: 1rem;
   cursor: pointer;
-}
+} 

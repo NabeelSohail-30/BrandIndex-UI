@@ -14,6 +14,117 @@ document.querySelector(".btn-gray").addEventListener("click", () => {
       </select>
     `;
 
+        if(show_side_nav == true) {
+
+            side_navbar.style.left = "-200px";
+            side_navbar.style.transition = "0.2s all ease"
+            show_side_nav = false;
+        }
+        else if(show_side_nav == false) {
+            
+            side_navbar.style.left = "0";
+            show_side_nav = true;
+        }
+
+
+    })
+  }
+
+  
+  const tabs = document.querySelectorAll('.tab');
+  const contents = document.querySelectorAll('.tab-content');
+  const backBtn = document.getElementById('back-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const finishBtn = document.getElementById('finish-btn');
+  
+  let currentTab = 0;
+
+  
+
+function updateTabs() {
+  // Update active tab
+  tabs.forEach((tab, index) => {
+    tab.classList.toggle('active', index === currentTab);
+  });
+  
+  // Update active content
+  contents.forEach((content, index) => {
+    content.classList.toggle('active', index === currentTab);
+  });
+  
+  // Update button states
+  // backBtn.disabled = currentTab === 0;
+  nextBtn.disabled = currentTab === tabs.length - 1;
+  if(currentTab < tabs.length - 1){
+
+
+    nextBtn.style.display = 'block';
+    finishBtn.style.display = 'none';
+  }
+  else if (currentTab == 4) {
+    
+    nextBtn.style.display = 'none';
+    finishBtn.style.display = 'block';
+}
+  
+}
+
+// Handle Next button
+nextBtn.addEventListener('click', () => {
+  if (currentTab < tabs.length - 1) {
+    currentTab++;
+    console.log(currentTab, 'tab number')
+    updateTabs();
+  }
+}
+
+);
+
+// Handle Back button
+backBtn.addEventListener('click', () => {
+  if (currentTab > 0) {
+    currentTab--;
+    updateTabs();
+  }
+  else {
+    
+    section_two.classList.remove('active')
+    section_one.classList.add('active')
+    
+  }
+  
+  
+}
+);
+
+// Initial setup
+updateTabs();
+
+const section_one  = document.getElementById("section-one");
+const section_two  = document.getElementById("section-two");
+const nextone = document.getElementById("next-one");
+
+nextone.addEventListener("click" , ()=> {
+
+
+  section_one.classList.remove('active')
+  section_two.classList.add('active')
+ 
+})
+
+
+finishBtn.addEventListener("click", ()=>{
+
+  Swal.fire({
+    title: 'Added',
+    text: 'Thank you for sharing your thoughts! Your voice matters and helps shape the brands you love. Come back soon to see how your favorite brands perform and contribute your insights for others!',
+    icon: 'success',
+    confirmButtonText: 'Okay',
+    confirmButtonColor:'#4caf50'
+ 
+  })
+})
+
   brandList.appendChild(newBrandItem);
 });
 
