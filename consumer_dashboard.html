@@ -77,6 +77,76 @@
                         <li>
                             <span><img src="./assets/images/Polygon 8.png" alt="" /> My Profile</span>
                         </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/consumer_dashboard.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Consumer Dashboard</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <div class="upper-nav">
+          <div class="social-icons">
+            <img src="./assets/images/1 1.png" alt="" />
+            <img src="./assets/images/2 1.png" alt="" />
+            <img src="./assets/images/3 1.png" alt="" />
+          </div>
+        </div>
+        <div id="login-nav">
+          <div class="lower-nav">
+            <div class="logo">
+              <img src="./assets/images/LOgo 1.png" alt="Logo" />
+            </div>
+            <ul>
+              <li><a href="#">Rankings</a></li>
+              <li><a href="#">Business Sectors</a></li>
+              <li><a href="#">Methodology</a></li>
+              <li><a href="#">Brand Research</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+
+            <div class="profile-container">
+              <div class="profile">
+                <img src="./assets/images/profile.png" alt="profile" />
+                <div class="profile-name">KG</div>
+              </div>
+              <div class="notification">
+                <img
+                  class="notification-icon"
+                  src="./assets/images/bell.png"
+                  alt=""
+                />
+              </div>
+              <div class="logout">
+                <img
+                  class="logout-icon"
+                  src="./assets/images/logout (1).png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section>
+      <div class="section-top">
+        <div class="side-nav-container">
+          <div id="sidenav_icon" class="side-nav">
+            <img class="side-nav-icon" src="./assets/images/home.png" alt="" />
+          </div>
 
                         <li><img src="./assets/images/Line 46.png" alt="" /> Update Details</li>
                         <li><img src="./assets/images/Line 46.png" alt="" /> Security</li>
@@ -369,6 +439,101 @@
                     <p>Address: [Insert Address]</p>
                     <p>We'd love to hear from you!</p>
                 </div>
+        <!-- side navbar -->
+        <aside id="side_navbar" class="side_navbar">
+          <ul class="sidenav-list">
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" /> My
+                Profile</span
+              >
+            </li>
+
+            <li>
+              <img src="./assets/images/Line 46.png" alt="" /> Update Details
+            </li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> Security</li>
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" /> Rate
+                Favorite Brands</span
+              >
+            </li>
+
+            <li><img src="./assets/images/Line 46.png" alt="" /> New Survey</li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> My Surveys</li>
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" />
+                Feedback</span
+              >
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <main>
+        <div class="main-container">
+          <div class="container">
+            <div class="user">
+              <h2 class="user-name">Welcome Kamran Ghori</h2>
+              <p class="user-text">Home > Rate Favorite Brands > New Survey</p>
+            </div>
+
+            <div class="register-container">
+              <div class="row">
+                <div class="form-group">
+                  <label for="Category">Category</label>
+                  <select class="inpt" id="Category">
+                    <option value="">Select Category</option>
+                    <option value="food">Food</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sub-category">Sub Category</label>
+                  <select class="inpt" id="sub-category">
+                    <option value="">Select Sub Category</option>
+                    <option value="edible oil">Edible Oil</option>
+                    <option value="t-shirt">T-Shirt</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <button class="btn-green form-group" style="width: 20%">
+                  Select
+                </button>
+              </div>
+              <div class="row">
+                <p>
+                  What are the top brands that come to your mind when thinking
+                  of Edible Oil?
+                </p>
+              </div>
+
+              <div id="brand-list" class="brand-list">
+                <div class="brand-item">
+                  <label class="numbering">1.</label>
+                  <select class="inpt" name="brand1" class="input-field">
+                    <option value="dalda">Dalda</option>
+                    <option value="soya-supreme">Soya Supreme</option>
+                    <option value="eva-canola">EVA Canola</option>
+                  </select>
+                </div>
+                <div class="brand-item">
+                  <label class="numbering">2.</label>
+                  <select class="inpt" name="brand2" class="input-field">
+                    <option value="dalda">Dalda</option>
+                    <option value="soya-supreme">Soya Supreme</option>
+                    <option value="eva-canola">EVA Canola</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <button class="btn-gray">+ Add More</button>
+                <button class="btn-green">Next</button>
+              </div>
             </div>
         </footer>
         <script src="./assets/js/consumerDash.js"></script>

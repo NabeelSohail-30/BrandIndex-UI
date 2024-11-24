@@ -1,29 +1,21 @@
 .user .user-name {
-    font-size: 17px;
+  font-size: 17px;
 }
 .user .user-text {
-    font-size: 14px;
+  font-size: 14px;
 }
 .user {
-    border-bottom: 2px solid var(--primary);
-    margin-bottom: 30px;
-    padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: 30px;
+  padding-bottom: 0.5rem;
 }
-  
-.brand-list {
-    margin-bottom: 10px;
-    max-height: 250px;
-    /* border: 1px solid black; */
-    overflow-y: auto;
-   
-  }
-  
-  .brand-item {
-    display: flex;
-    align-items: center;
-    margin:0 10px 10px  0;
 
-  }
+.brand-list {
+  margin-bottom: 10px;
+  max-height: 250px;
+  /* border: 1px solid black; */
+  overflow-y: auto;
+}
   
   .numbering {
     width: 20px;
@@ -121,3 +113,16 @@
     padding: 0.5rem;
     font-weight: 500;
   }
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+}
+
+.numbering {
+  width: 20px;
+  font-weight: bold;
+  color: #666;
+  margin-right: 10px;
+}
