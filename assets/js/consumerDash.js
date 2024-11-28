@@ -1,10 +1,10 @@
-document.querySelector('.btn-gray').addEventListener('click', () => {
-    const brandList = document.querySelector('.brand-list');
-    const count = brandList.children.length + 1;
-  
-    const newBrandItem = document.createElement('div');
-    newBrandItem.classList.add('brand-item');
-    newBrandItem.innerHTML = `
+document.querySelector(".btn-gray").addEventListener("click", () => {
+  const brandList = document.querySelector(".brand-list");
+  const count = brandList.children.length + 1;
+
+  const newBrandItem = document.createElement("div");
+  newBrandItem.classList.add("brand-item");
+  newBrandItem.innerHTML = `
       <label class="numbering">${count}.</label>
       <select class="inpt" name="brand${count}">
         <option value="dalda">Dalda</option>
