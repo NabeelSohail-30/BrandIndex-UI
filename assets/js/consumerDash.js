@@ -13,7 +13,6 @@ document.querySelector(".btn-gray").addEventListener("click", () => {
         <!-- Add more options as needed -->
       </select>
     `;
-
   brandList.appendChild(newBrandItem);
 });
 
@@ -23,11 +22,11 @@ let show_side_nav = false;
 
 if (sidenav_btn) {
   sidenav_btn.addEventListener("click", () => {
-    if (show_side_nav == true) {
+    if (show_side_nav) {
       side_navbar.style.left = "-200px";
       side_navbar.style.transition = "0.2s all ease";
       show_side_nav = false;
-    } else if (show_side_nav == false) {
+    } else {
       side_navbar.style.left = "0";
       show_side_nav = true;
     }
@@ -54,7 +53,6 @@ function updateTabs() {
   });
 
   // Update button states
-  // backBtn.disabled = currentTab === 0;
   nextBtn.disabled = currentTab === tabs.length - 1;
   if (currentTab < tabs.length - 1) {
     nextBtn.style.display = "block";
