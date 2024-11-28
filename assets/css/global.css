@@ -7,10 +7,9 @@
   --bg: #f4f4f4;
   --bg-light: #ccc;
   --link-color: #007bff;
-  --gray:#959595;
-  --lightgreen:#D9F2D0;
-  --lightgray: #EAE7E7;
   --gray: #959595;
+  --lightgreen: #d9f2d0;
+  --lightgray: #eae7e7;
 }
 
 /* Root CSS */
@@ -193,4 +192,4 @@ header .lower-nav .profile-container .notification .notification-icon {
   font-size: small;
   padding-left: 1rem;
   cursor: pointer;
-} 
+}

@@ -78,302 +78,370 @@
                             <span><img src="./assets/images/Polygon 8.png" alt="" /> My Profile</span>
                         </li>
 
-                        <li><img src="./assets/images/Line 46.png" alt="" /> Update Details</li>
-                        <li><img src="./assets/images/Line 46.png" alt="" /> Security</li>
+        <!-- side navbar -->
+        <aside id="side_navbar" class="side_navbar">
+          <ul class="sidenav-list">
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" /> My
+                Profile</span
+              >
+            </li>
 
-                        <li>
-                            <span><img src="./assets/images/Polygon 8.png" alt="" /> Rate Favorite Brands</span>
-                        </li>
+            <li>
+              <img src="./assets/images/Line 46.png" alt="" /> Update Details
+            </li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> Security</li>
 
-                        <li><img src="./assets/images/Line 46.png" alt="" /> New Survey</li>
-                        <li><img src="./assets/images/Line 46.png" alt="" /> My Surveys</li>
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" /> Rate
+                Favorite Brands</span
+              >
+            </li>
 
-                        <li>
-                            <span><img src="./assets/images/Polygon 8.png" alt="" /> Feedback</span>
-                        </li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> New Survey</li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> My Surveys</li>
+
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" />
+                Feedback</span
+              >
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <main>
+        <div class="main-container">
+          <div class="container">
+            <div class="user">
+              <h2 class="user-name">Welcome Kamran Ghori</h2>
+              <p class="user-text">Home > Rate Favorite Brands > New Survey</p>
+            </div>
+
+            <div class="register-container">
+              <div class="row">
+                <div class="form-group">
+                  <label for="Category">Category</label>
+                  <select class="inpt" id="Category">
+                    <option value="">Select Category</option>
+                    <option value="food">Food</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="sub-category">Sub Category</label>
+                  <select class="inpt" id="sub-category">
+                    <option value="">Select Sub Category</option>
+                    <option value="edible oil">Edible Oil</option>
+                    <option value="t-shirt">T-Shirt</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <button class="btn-green form-group">Select</button>
+              </div>
+              <div id="section-one" class="section active">
+                <div class="register-container">
+                  <div class="row">
+                    <p>
+                      What are the top brands that come to your mind when
+                      thinking of Edible Oil?
+                    </p>
+                  </div>
+
+                  <div id="brand-list" class="brand-list">
+                    <div class="brand-item">
+                      <label class="numbering">1.</label>
+                      <select class="inpt" name="brand1" class="input-field">
+                        <option value="dalda">Dalda</option>
+                        <option value="soya-supreme">Soya Supreme</option>
+                        <option value="eva-canola">EVA Canola</option>
+                      </select>
+                    </div>
+                    <div class="brand-item">
+                      <label class="numbering">2.</label>
+                      <select class="inpt" name="brand2" class="input-field">
+                        <option value="dalda">Dalda</option>
+                        <option value="soya-supreme">Soya Supreme</option>
+                        <option value="eva-canola">EVA Canola</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <button class="btn-gray">+ Add More</button>
+                    <button id="next-one" class="btn-green">Next</button>
+                  </div>
+                </div>
+              </div>
+
+              <div id="section-two" class="section">
+                <div class="register-container">
+                  <h2 class="rate-your-brand">Rate Your Brands</h2>
+
+                  <!-- Tabs -->
+                  <div class="tabs">
+                    <button class="tab" data-tab="quality">Quality</button>
+                    <button class="tab" data-tab="familiarity">
+                      Familiarity
+                    </button>
+                    <button class="tab" data-tab="affordability">
+                      Affordability
+                    </button>
+                    <button class="tab" data-tab="availability">
+                      Availability
+                    </button>
+                    <button class="tab" data-tab="trust">Trust</button>
+                  </div>
+
+                  <!-- Tab Content -->
+                  <div class="tab-content" id="quality">
+                    <p class="question-text">
+                      How will you rate these brands in terms of quality?
+                    </p>
+                    <ul class="rate-list">
+                      <li class="rate-item">
+                        <span class="trust">Trust</span>
+                        <div class="rating-options">
+                          <span>1</span><span>2</span><span>3</span
+                          ><span>4</span><span>5</span>
+                        </div>
+                      </li>
+                      <li class="rate-item">
+                        <span>Dalda</span>
+                        <div class="rating-options">
+                          <input type="radio" name="dalda-quality" value="1" />
+                          <input type="radio" name="dalda-quality" value="2" />
+                          <input type="radio" name="dalda-quality" value="3" />
+                          <input type="radio" name="dalda-quality" value="4" />
+                          <input type="radio" name="dalda-quality" value="5" />
+                        </div>
+                      </li>
+                      <li class="rate-item">
+                        <span>Soya Supreme</span>
+                        <div class="rating-options">
+                          <input type="radio" name="soya-quality" value="1" />
+                          <input type="radio" name="soya-quality" value="2" />
+                          <input type="radio" name="soya-quality" value="3" />
+                          <input type="radio" name="soya-quality" value="4" />
+                          <input type="radio" name="soya-quality" value="5" />
+                        </div>
+                      </li>
                     </ul>
-                </aside>
-            </div>
+                  </div>
 
-            <main>
-                <div class="main-container">
-                    <div class="container">
-                        <div class="user">
-                            <h2 class="user-name">Welcome Kamran Ghori</h2>
-                            <p class="user-text">Home > Rate Favorite Brands > New Survey</p>
+                  <div class="tab-content" id="familiarity">
+                    <p class="question-text">
+                      How familiar are you with these brands?
+                    </p>
+                    <ul class="rate-list">
+                      <li class="rate-item">
+                        <span class="trust">Trust</span>
+                        <div class="rating-options">
+                          <span>1</span><span>2</span><span>3</span
+                          ><span>4</span><span>5</span>
                         </div>
-
-                        <div class="register-container">
-                            <div class="row">
-                                <div class="form-group">
-                                    <label for="Category">Category</label>
-                                    <select class="inpt" id="Category">
-                                        <option value="">Select Category</option>
-                                        <option value="food">Food</option>
-                                        <option value="clothes">Clothes</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="sub-category">Sub Category</label>
-                                    <select class="inpt" id="sub-category">
-                                        <option value="">Select Sub Category</option>
-                                        <option value="edible oil">Edible Oil</option>
-                                        <option value="t-shirt">T-Shirt</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <button class="btn-green form-group">Select</button>
-                            </div>
-                            <div id="section-one" class="section active">
-                                <div class="register-container">
-                                    <div class="row">
-                                        <p>What are the top brands that come to your mind when thinking of Edible Oil?</p>
-                                    </div>
-
-                                    <div id="brand-list" class="brand-list">
-                                        <div class="brand-item">
-                                            <label class="numbering">1.</label>
-                                            <select class="inpt" name="brand1" class="input-field">
-                                                <option value="dalda">Dalda</option>
-                                                <option value="soya-supreme">Soya Supreme</option>
-                                                <option value="eva-canola">EVA Canola</option>
-                                            </select>
-                                        </div>
-                                        <div class="brand-item">
-                                            <label class="numbering">2.</label>
-                                            <select class="inpt" name="brand2" class="input-field">
-                                                <option value="dalda">Dalda</option>
-                                                <option value="soya-supreme">Soya Supreme</option>
-                                                <option value="eva-canola">EVA Canola</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <button class="btn-gray">+ Add More</button>
-                                        <button id="next-one" class="btn-green">Next</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="section-two" class="section">
-                                <div class="register-container">
-                                    <h2 class="rate-your-brand">Rate Your Brands</h2>
-
-                                    <!-- Tabs -->
-                                    <div class="tabs">
-                                        <button class="tab" data-tab="quality">Quality</button>
-                                        <button class="tab" data-tab="familiarity">Familiarity</button>
-                                        <button class="tab" data-tab="affordability">Affordability</button>
-                                        <button class="tab" data-tab="availability">Availability</button>
-                                        <button class="tab" data-tab="trust">Trust</button>
-                                    </div>
-
-                                    <!-- Tab Content -->
-                                    <div class="tab-content" id="quality">
-                                        <p class="question-text">How will you rate these brands in terms of quality?</p>
-                                        <ul class="rate-list">
-                                            <li class="rate-item">
-                                                <span class="trust">Trust</span>
-                                                <div class="rating-options"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-                                            </li>
-                                            <li class="rate-item">
-                                                <span>Dalda</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="dalda-quality" value="1" />
-                                                    <input type="radio" name="dalda-quality" value="2" />
-                                                    <input type="radio" name="dalda-quality" value="3" />
-                                                    <input type="radio" name="dalda-quality" value="4" />
-                                                    <input type="radio" name="dalda-quality" value="5" />
-                                                </div>
-                                            </li>
-                                            <li class="rate-item">
-                                                <span>Soya Supreme</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="soya-quality" value="1" />
-                                                    <input type="radio" name="soya-quality" value="2" />
-                                                    <input type="radio" name="soya-quality" value="3" />
-                                                    <input type="radio" name="soya-quality" value="4" />
-                                                    <input type="radio" name="soya-quality" value="5" />
-                                                </div>
-                                              </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tab-content" id="familiarity">
-                                        <p class="question-text">How familiar are you with these brands?</p>
-                                        <ul class="rate-list">
-                                            <li class="rate-item">
-                                                <span class="trust">Trust</span>
-                                                <div class="rating-options"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-                                            </li>
-                                            <!-- Add brand ratings for familiarity -->
-                                            <li class="rate-item">
-                                                <span>Dalda</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="dalda-quality" value="1" />
-                                                    <input type="radio" name="dalda-quality" value="2" />
-                                                    <input type="radio" name="dalda-quality" value="3" />
-                                                    <input type="radio" name="dalda-quality" value="4" />
-                                                    <input type="radio" name="dalda-quality" value="5" />
-                                                </div>
-                                            </li>
-                                            <li class="rate-item">
-                                                <span>Soya Supreme</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="soya-quality" value="1" />
-                                                    <input type="radio" name="soya-quality" value="2" />
-                                                    <input type="radio" name="soya-quality" value="3" />
-                                                    <input type="radio" name="soya-quality" value="4" />
-                                                    <input type="radio" name="soya-quality" value="5" />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tab-content" id="affordability">
-                                        <p class="question-text">How will you rate these brands in terms of affordability?</p>
-                                        <ul class="rate-list">
-                                            <li class="rate-item">
-                                                <span class="trust">Trust</span>
-                                                <div class="rating-options"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-                                            </li>
-                                            <!-- Add brand ratings for affordability -->
-                                            <li class="rate-item">
-                                                <span>Dalda</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="dalda-quality" value="1" />
-                                                    <input type="radio" name="dalda-quality" value="2" />
-                                                    <input type="radio" name="dalda-quality" value="3" />
-                                                    <input type="radio" name="dalda-quality" value="4" />
-                                                    <input type="radio" name="dalda-quality" value="5" />
-                                                </div>
-                                            </li>
-                                            <li class="rate-item">
-                                                <span>Soya Supreme</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="soya-quality" value="1" />
-                                                    <input type="radio" name="soya-quality" value="2" />
-                                                    <input type="radio" name="soya-quality" value="3" />
-                                                    <input type="radio" name="soya-quality" value="4" />
-                                                    <input type="radio" name="soya-quality" value="5" />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tab-content" id="availability">
-                                        <p class="question-text">How available are these brands?</p>
-                                        <ul class="rate-list">
-                                            <li class="rate-item">
-                                                <span class="trust">Trust</span>
-                                                <div class="rating-options"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-                                            </li>
-                                            <!-- Add brand ratings for availability -->
-                                            <li class="rate-item">
-                                                <span>Dalda</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="dalda-quality" value="1" />
-                                                    <input type="radio" name="dalda-quality" value="2" />
-                                                    <input type="radio" name="dalda-quality" value="3" />
-                                                    <input type="radio" name="dalda-quality" value="4" />
-                                                    <input type="radio" name="dalda-quality" value="5" />
-                                                </div>
-                                            </li>
-                                            <li class="rate-item">
-                                                <span>Soya Supreme</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="soya-quality" value="1" />
-                                                    <input type="radio" name="soya-quality" value="2" />
-                                                    <input type="radio" name="soya-quality" value="3" />
-                                                    <input type="radio" name="soya-quality" value="4" />
-                                                    <input type="radio" name="soya-quality" value="5" />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="tab-content" id="trust">
-                                        <p class="question-text">How much do you trust these brands?</p>
-                                        <ul class="rate-list">
-                                            <li class="rate-item">
-                                                <span class="trust">Trust</span>
-                                                <div class="rating-options"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-                                            </li>
-                                            <!-- Add brand ratings for trust -->
-                                            <li class="rate-item">
-                                                <span>Dalda</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="dalda-quality" value="1" />
-                                                    <input type="radio" name="dalda-quality" value="2" />
-                                                    <input type="radio" name="dalda-quality" value="3" />
-                                                    <input type="radio" name="dalda-quality" value="4" />
-                                                    <input type="radio" name="dalda-quality" value="5" />
-                                                </div>
-                                            </li>
-                                            <li class="rate-item">
-                                                <span>Soya Supreme</span>
-                                                <div class="rating-options">
-                                                    <input type="radio" name="soya-quality" value="1" />
-                                                    <input type="radio" name="soya-quality" value="2" />
-                                                    <input type="radio" name="soya-quality" value="3" />
-                                                    <input type="radio" name="soya-quality" value="4" />
-                                                    <input type="radio" name="soya-quality" value="5" />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- Navigation -->
-                                    <div class="navigation row">
-                                        <button id="back-btn" class="btn-gray">Back</button>
-                                        <button id="next-btn" class="btn-green ">Next</button>
-                                        <button id="finish-btn" class="btn-green finishBtn">Finish</button>
-                                    </div>
-                                </div>
-                            </div>
+                      </li>
+                      <!-- Add brand ratings for familiarity -->
+                      <li class="rate-item">
+                        <span>Dalda</span>
+                        <div class="rating-options">
+                          <input type="radio" name="dalda-quality" value="1" />
+                          <input type="radio" name="dalda-quality" value="2" />
+                          <input type="radio" name="dalda-quality" value="3" />
+                          <input type="radio" name="dalda-quality" value="4" />
+                          <input type="radio" name="dalda-quality" value="5" />
                         </div>
-                    </div>
-                </div>
-            </main>
-        </section>
+                      </li>
+                      <li class="rate-item">
+                        <span>Soya Supreme</span>
+                        <div class="rating-options">
+                          <input type="radio" name="soya-quality" value="1" />
+                          <input type="radio" name="soya-quality" value="2" />
+                          <input type="radio" name="soya-quality" value="3" />
+                          <input type="radio" name="soya-quality" value="4" />
+                          <input type="radio" name="soya-quality" value="5" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
 
-        <!-- Footer Section -->
-        <footer id="footer">
-            <div class="footer-container">
-                <!-- Left Section -->
-                <div class="footer-left">
-                    <img src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png" alt="Brand Index Logo" />
-                    <p>
-                        Brand Index is an innovative platform powered by Brands Foundation Pakistan, dedicated to researching and analyzing brand performance across various sectors.
+                  <div class="tab-content" id="affordability">
+                    <p class="question-text">
+                      How will you rate these brands in terms of affordability?
                     </p>
-                    <div class="footer-social-icons">
-                        <a href="#"><img src="./assets/images/1 1.png" alt="Facebook" width="20" /></a>
-                        <a href="#"><img src="./assets/images/2 1.png" alt="LinkedIn" width="20" /></a>
-                        <a href="#"><img src="./assets/images/Iocn 12.png" alt="Instagram" width="20" /></a>
-                    </div>
-                </div>
+                    <ul class="rate-list">
+                      <li class="rate-item">
+                        <span class="trust">Trust</span>
+                        <div class="rating-options">
+                          <span>1</span><span>2</span><span>3</span
+                          ><span>4</span><span>5</span>
+                        </div>
+                      </li>
+                      <!-- Add brand ratings for affordability -->
+                      <li class="rate-item">
+                        <span>Dalda</span>
+                        <div class="rating-options">
+                          <input type="radio" name="dalda-quality" value="1" />
+                          <input type="radio" name="dalda-quality" value="2" />
+                          <input type="radio" name="dalda-quality" value="3" />
+                          <input type="radio" name="dalda-quality" value="4" />
+                          <input type="radio" name="dalda-quality" value="5" />
+                        </div>
+                      </li>
+                      <li class="rate-item">
+                        <span>Soya Supreme</span>
+                        <div class="rating-options">
+                          <input type="radio" name="soya-quality" value="1" />
+                          <input type="radio" name="soya-quality" value="2" />
+                          <input type="radio" name="soya-quality" value="3" />
+                          <input type="radio" name="soya-quality" value="4" />
+                          <input type="radio" name="soya-quality" value="5" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
 
-                <!-- Right Section -->
-                <div class="footer-right">
-                    <h4>Get in touch!</h4>
-                    <p>
-                        We're here to help! Whether you have questions about our brand rankings, want to participate in a survey, or have suggestions for us, feel free to reach out.
+                  <div class="tab-content" id="availability">
+                    <p class="question-text">How available are these brands?</p>
+                    <ul class="rate-list">
+                      <li class="rate-item">
+                        <span class="trust">Trust</span>
+                        <div class="rating-options">
+                          <span>1</span><span>2</span><span>3</span
+                          ><span>4</span><span>5</span>
+                        </div>
+                      </li>
+                      <!-- Add brand ratings for availability -->
+                      <li class="rate-item">
+                        <span>Dalda</span>
+                        <div class="rating-options">
+                          <input type="radio" name="dalda-quality" value="1" />
+                          <input type="radio" name="dalda-quality" value="2" />
+                          <input type="radio" name="dalda-quality" value="3" />
+                          <input type="radio" name="dalda-quality" value="4" />
+                          <input type="radio" name="dalda-quality" value="5" />
+                        </div>
+                      </li>
+                      <li class="rate-item">
+                        <span>Soya Supreme</span>
+                        <div class="rating-options">
+                          <input type="radio" name="soya-quality" value="1" />
+                          <input type="radio" name="soya-quality" value="2" />
+                          <input type="radio" name="soya-quality" value="3" />
+                          <input type="radio" name="soya-quality" value="4" />
+                          <input type="radio" name="soya-quality" value="5" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-content" id="trust">
+                    <p class="question-text">
+                      How much do you trust these brands?
                     </p>
-                    <p>
-                        Email:
-                        <a href="mailto:info@brandindexpakistan.com">info@brandindexpakistan.com</a>
-                    </p>
-                    <p>Phone: +92-XXX-XXXXXXX</p>
-                    <p>Address: [Insert Address]</p>
-                    <p>We'd love to hear from you!</p>
+                    <ul class="rate-list">
+                      <li class="rate-item">
+                        <span class="trust">Trust</span>
+                        <div class="rating-options">
+                          <span>1</span><span>2</span><span>3</span
+                          ><span>4</span><span>5</span>
+                        </div>
+                      </li>
+                      <!-- Add brand ratings for trust -->
+                      <li class="rate-item">
+                        <span>Dalda</span>
+                        <div class="rating-options">
+                          <input type="radio" name="dalda-quality" value="1" />
+                          <input type="radio" name="dalda-quality" value="2" />
+                          <input type="radio" name="dalda-quality" value="3" />
+                          <input type="radio" name="dalda-quality" value="4" />
+                          <input type="radio" name="dalda-quality" value="5" />
+                        </div>
+                      </li>
+                      <li class="rate-item">
+                        <span>Soya Supreme</span>
+                        <div class="rating-options">
+                          <input type="radio" name="soya-quality" value="1" />
+                          <input type="radio" name="soya-quality" value="2" />
+                          <input type="radio" name="soya-quality" value="3" />
+                          <input type="radio" name="soya-quality" value="4" />
+                          <input type="radio" name="soya-quality" value="5" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Navigation -->
+                  <div class="navigation row">
+                    <button id="back-btn" class="btn-gray">Back</button>
+                    <button id="next-btn" class="btn-green">Next</button>
+                    <button id="finish-btn" class="btn-green finishBtn">
+                      Finish
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
-        </footer>
-        <script src="./assets/js/consumerDash.js"></script>
-        <script src="./assets/js/Sidebar.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </body>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <img
+            src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png"
+            alt="Brand Index Logo"
+          />
+          <p>
+            Brand Index is an innovative platform powered by Brands Foundation
+            Pakistan, dedicated to researching and analyzing brand performance
+            across various sectors.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#"
+              ><img src="./assets/images/1 1.png" alt="Facebook" width="20"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/2 1.png" alt="LinkedIn" width="20"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/images/Iocn 12.png"
+                alt="Instagram"
+                width="20"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="footer-right">
+          <h4>Get in touch!</h4>
+          <p>
+            We're here to help! Whether you have questions about our brand
+            rankings, want to participate in a survey, or have suggestions for
+            us, feel free to reach out.
+          </p>
+          <p>
+            Email:
+            <a href="mailto:info@brandindexpakistan.com"
+              >info@brandindexpakistan.com</a
+            >
+          </p>
+          <p>Phone: +92-XXX-XXXXXXX</p>
+          <p>Address: [Insert Address]</p>
+          <p>We'd love to hear from you!</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/consumerDash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
 </html>
-

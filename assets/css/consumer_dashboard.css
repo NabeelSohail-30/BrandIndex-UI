@@ -16,103 +16,6 @@
   /* border: 1px solid black; */
   overflow-y: auto;
 }
-  
-  .numbering {
-    width: 20px;
-    font-weight: bold;
-    color: #666;
-    margin-right: 10px;
-  }
-
-
-
-  .section {
-    display: none;
-  }
-
-  .section.active {
-    display: block;
-  }
-  
- 
-  /* ///////// */
-
-  
-  .tabs {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .tab {
-    padding: 10px 20px;
-    background:var(--bg);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .tab.active {
-    background: var(--primary);
-    color: var(--white);
-  }
-  
-  .tab-content {
-    display: none;
-    
-  }
-  
-  .tab-content.active {
-    display: block;
-  }
-  
-  .rate-list {
-    list-style: none;
-    padding: 0;
-    margin-top:1rem;
-  }
-  
-  .rate-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    background-color: var(--lightgreen);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  }
-  .tab-content .rate-list .rate-item .rating-options {
-    /* border: 1px solid black; */
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    cursor: pointer;
-  }
- 
-  
-  .register-container .navigation {
-    display: flex;
-    justify-content: space-between;
-
-  }
-  
-  .section .register-container .tab-content .question-text {
-    background-color: var(--lightgray);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  }
-  .tab-content .rate-list .rate-item .trust {
-    font-weight: 700;
-  }
-
-  .section .register-container .rate-your-brand {
-
-    font-size: large;
-    border-bottom: 2px solid var(--primary);
-    width: max-content;
-    padding: 0.5rem;
-    font-weight: 500;
-  }
 
 .brand-item {
   display: flex;
@@ -125,4 +28,86 @@
   font-weight: bold;
   color: #666;
   margin-right: 10px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* ///////// */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: var(--bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.rate-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.rate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: var(--lightgreen);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.tab-content .rate-list .rate-item .rating-options {
+  /* border: 1px solid black; */
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.register-container .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section .register-container .tab-content .question-text {
+  background-color: var(--lightgray);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.tab-content .rate-list .rate-item .trust {
+  font-weight: 700;
+}
+
+.section .register-container .rate-your-brand {
+  font-size: large;
+  border-bottom: 2px solid var(--primary);
+  width: max-content;
+  padding: 0.5rem;
+  font-weight: 500;
 }
