@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/consumer_dashboard.css"> -->
+    <link rel="stylesheet" href="./assets/css/brandInformation.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="upper-nav">
+          <div class="social-icons">
+            <img src="./assets/images/1 1.png" alt="" />
+            <img src="./assets/images/2 1.png" alt="" />
+            <img src="./assets/images/3 1.png" alt="" />
+          </div>
+        </div>
+        <div id="login-nav">
+          <div class="lower-nav">
+            <div class="logo">
+              <img src="./assets/images/LOgo 1.png" alt="Logo" />
+            </div>
+            <ul>
+              <li><a href="#">Rankings</a></li>
+              <li><a href="#">Business Sectors</a></li>
+              <li><a href="#">Methodology</a></li>
+              <li><a href="#">Brand Research</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+
+            <div class="profile-container">
+              <div class="profile">
+                <img src="./assets/images/profile.png" alt="profile" />
+                <div class="profile-name">KG</div>
+              </div>
+              <div class="notification">
+                <img
+                  class="notification-icon"
+                  src="./assets/images/bell.png"
+                  alt=""
+                />
+              </div>
+              <div class="logout">
+                <img
+                  class="logout-icon"
+                  src="./assets/images/logout (1).png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="section-top">
+        <div class="side-nav-container">
+          <div id="sidenav_icon" class="side-nav">
+            <img class="side-nav-icon" src="./assets/images/home.png" alt="" />
+          </div>
+
+          <div class="main_heading">
+            <h2 class="consumer-heading">Brand Ranking</h2>
+            <p class="consumer-text">
+              Brand Performance & Audit Control Center
+            </p>
+          </div>
+        </div>
+        <div class="about-brand">
+          <p class="about-text">
+            Monitor, Analyze, And Report Consumer Insights For Optimal Brand
+            Transparency And Accountability
+          </p>
+        </div>
+
+        <!-- side navbar -->
+        <aside id="side_navbar" class="side_navbar">
+          <ul class="sidenav-list">
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" /> My
+                Profile</span
+              >
+            </li>
+
+            <li>
+              <img src="./assets/images/Line 46.png" alt="" /> Update Details
+            </li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> Security</li>
+
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" /> Rate
+                Favorite Brands</span
+              >
+            </li>
+
+            <li><img src="./assets/images/Line 46.png" alt="" /> New Survey</li>
+            <li><img src="./assets/images/Line 46.png" alt="" /> My Surveys</li>
+
+            <li>
+              <span
+                ><img src="./assets/images/Polygon 8.png" alt="" />
+                Feedback</span
+              >
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <main>
+        <!-- Brand Info Upper Section -->
+        <div class="table-container">
+          <div class="brandinfo-container">
+            <div>
+              <p class="audit-header">Brand Information Center</p>
+              <p class="category">Home > Brand Management</p>
+            </div>
+            <div class="back-button">
+              <img src="./assets/images/back.png" alt="" />
+              <a href="#"> Back</a>
+            </div>
+          </div>
+
+          <div class="register-container">
+            <!-- Tabs -->
+            <div class="tabs">
+              <button class="tab" data-tab="Brand-Information">
+                Brand Information
+              </button>
+              <button class="tab" data-tab="Brand-Demographics">
+                Brand Demographics
+              </button>
+              <button class="tab" data-tab="Brand-Personality">
+                Brand Personality
+              </button>
+              <button class="tab" data-tab="Brand-Characteristics">
+                Brand Characteristics
+              </button>
+              <button class="tab" data-tab="Key-Attributes-Rating">
+                Key Attributes Rating
+              </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="Brand-Information">
+              <p class="question-text">Brand Information</p>
+              <table class="brand-info-table">
+                <tr>
+                  <td>Brand Name</td>
+                  <td><input type="text" name="brand-name" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Category</td>
+                  <td><input type="text" name="brand-category" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Sub-Category</td>
+                  <td><input type="text" name="brand-sub-category" /></td>
+                </tr>
+                <tr>
+                  <td>Business Type</td>
+                  <td><input type="text" name="business-type" /></td>
+                </tr>
+                <tr>
+                  <td>Owner</td>
+                  <td><input type="text" name="owner" /></td>
+                </tr>
+                <tr>
+                  <td>Year Established (PK)</td>
+                  <td><input type="number" name="year-established" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Slogan</td>
+                  <td><input type="text" name="brand-slogan" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Profile</td>
+                  <td><textarea name="brand-profile"></textarea></td>
+                </tr>
+                <tr>
+                  <td>Brand Logo</td>
+                  <td><input type="file" name="brand-logo" /></td>
+                </tr>
+                <tr>
+                  <td>Number of Outlets</td>
+                  <td><input type="number" name="number-of-outlets" /></td>
+                </tr>
+                <tr>
+                  <td>Business Region</td>
+                  <td><input type="text" name="business-region" /></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-content" id="Brand-Demographics">
+                <p class="question-text">Brand Demographics</p>
+                <table class="brand-info-table">
+                  <tr>
+                    <td>Brand Market Region</td>
+                    <td><input type="text" name="Brand-Market-Region" /></td>
+                  </tr>
+                  <tr>
+                    <td>Consumer Income Group</td>
+                    <td><input type="text" name="Consumer-Income-Group" /></td>
+                  </tr>
+                  <tr>
+                    <td>Target Gender Group</td>
+                    <td><input type="text" name="Target-Gender-Group" /></td>
+                  </tr>
+                  <tr>
+                    <td>Target Income Level</td>
+                    <td><input type="text" name="Target-Income-Level" /></td>
+                  </tr>
+                  <tr>
+                    <td>Target Age Group</td>
+                    <td><input type="text" name="Target-Age-Group" /></td>
+                  </tr>
+                </table>
+            </div>
+
+            <div class="tab-content" id="Brand-Personality">
+              <p class="question-text">
+                Brand Personality
+              </p>
+              <table class="brand-info-table">
+                <tr>
+                  <td>Brand Identity<p>[Define the unique elements that distinguish your brand, such as logo, colors, and tone, to shape how consumers recognize and relate to it.]</p></td>
+                  <td><input type="text" name="Brand-Identity" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Promise</td>
+                  <td><input type="text" name="Brand-Promise" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Positioning <p>[How is it positioned for best impact]</p></td>
+                  <td><input type="text" name="Brand-Positioning" /></td>
+                </tr>
+                <tr>
+                  <td>Brand Comparison <p>[With which other brands, is the brand compared with?]</p></td>
+                  <td><input type="text" name="Brand-Comparison" /></td>
+                </tr>
+                <tr>
+                  <td>What makes the brand unique in its category?</td>
+                  <td><input type="text" name="unique-category" /></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-content" id="Brand-Characteristics">
+              <p class="question-text">Brand Characteristics</p>
+              <table class="brand-info-table">
+                <tr>
+                  <td>Brand Trustworthiness</td>
+                  <td>
+                    <div class="radio-group">
+                        <div>
+
+                            <label>
+                                High
+                            </label>
+                            <input type="radio" name="trustworthiness" value="high" /> 
+                        </div>
+                        <div>
+
+                            <label> Medium</label>
+                            <input type="radio" name="trustworthiness" value="medium" />
+                        </div>
+                        <div>
+
+                            <label>Low</label>
+                            <input type="radio" name="trustworthiness" value="low" /> 
+                        </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Reason / Remarks</td>
+                  <td><textarea name="remarks" rows="2" placeholder="Type your remarks here"></textarea>
+                    <button class="add-btn">+</button>
+                </td>
+                  
+                </tr>
+                <tr>
+                  <td>Brand Strengths</td>
+                  <td>
+                    <ul class="numbered-list">
+                      <li><input type="text" placeholder="1. Enter strength" /></li>
+                      <li><input type="text" placeholder="2. Enter strength" /></li>
+                      <li><input type="text" placeholder="3. Enter strength" /></li>
+                    </ul>
+                    <button class="add-btn">+</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Brand Major Achievements</td>
+                  <td>
+                    <ul class="numbered-list">
+                      <li><input type="text" placeholder="1. Enter achievement" /></li>
+                      <li><input type="text" placeholder="2. Enter achievement" /></li>
+                      <li><input type="text" placeholder="3. Enter achievement" /></li>
+                    </ul>
+                    <button class="add-btn">+</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Common Media Used for Brand Messages</td>
+                  <td>
+                    <input rows="3" placeholder=""></input>
+                    <input rows="3" placeholder=""></input>
+                    <input rows="3" placeholder=""></input>
+                    <button class="add-btn">+</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Brand Reputation</td>
+                  <td>
+                    <div class="radio-group">
+                        <div><label> Excellent</label>
+                            <input type="radio" name="reputation" value="excellent" /></div>
+                        <div><label> Good</label>
+                            <input type="radio" name="reputation" value="good" /></div>
+                        <div><label>Fair</label>
+                            <input type="radio" name="reputation" value="fair" /> </div>
+                            <div><label> Poor</label>
+                                <input type="radio" name="reputation" value="poor" /></div>
+                      
+                      
+                      
+                      
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Value Brands Stand For</td>
+                  <td>
+                    <ul class="numbered-list">
+                      <li><input type="text" placeholder="1. Enter value" /></li>
+                      <li><input type="text" placeholder="2. Enter value" /></li>
+                      <li><input type="text" placeholder="3. Enter value" /></li>
+                    </ul>
+                    <button class="add-btn">+</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Frequency of Brand Audits in Past 5 Years</td>
+                  <td>
+                    <input type="text" placeholder="Enter number of audits" />
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Reason / Remarks</td>
+                  <td><textarea name="audit-remarks" rows="2" placeholder="Type your remarks here"></textarea>
+                    <button class="add-btn">+</button>
+                </td>
+                </tr>
+                <tr>
+                  <td>Value for Money</td>
+                  <td>
+                    <div class="radio-group">
+                        <div>
+
+                            <label>High</label>
+                            <input type="radio" name="value-for-money" value="high" /> 
+                        </div>
+                      <div>
+                            
+                          <label> Medium</label>
+                          <input type="radio" name="value-for-money" value="medium" />
+                      </div>
+                      <div>
+                            
+                          <label> Low</label>
+                          <input type="radio" name="value-for-money" value="low" />
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-content" id="Key-Attributes-Rating">
+              <table class="rating-table">
+                <thead>
+                  <tr>
+                    <th colspan="2">Key Attribute Rating</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="instruction">
+                      Tick the appropriate rating of attributes below
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Overall Score</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="overall-score" value="A+" /> A+ (80%+)</label>
+                        <label><input type="radio" name="overall-score" value="A" /> A (70%-79%)</label>
+                        <label><input type="radio" name="overall-score" value="B+" /> B+ (60%-69%)</label>
+                        <label><input type="radio" name="overall-score" value="B" /> B (50%-59%)</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Quality</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="quality" value="outstanding" /> Outstanding</label>
+                        <label><input type="radio" name="quality" value="excellent" /> Excellent</label>
+                        <label><input type="radio" name="quality" value="good" /> Good</label>
+                        <label><input type="radio" name="quality" value="fair" /> Fair</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Familiarity</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="familiarity" value="impressive" /> Impressive</label>
+                        <label><input type="radio" name="familiarity" value="reasonable" /> Reasonable</label>
+                        <label><input type="radio" name="familiarity" value="well-known" /> Well-Known</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Affordability</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="affordability" value="expensive" /> Expensive</label>
+                        <label><input type="radio" name="affordability" value="costly" /> Costly</label>
+                        <label><input type="radio" name="affordability" value="justifiable" /> Justifiable</label>
+                        <label><input type="radio" name="affordability" value="economical" /> Economical</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Availability</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="availability" value="consistently-high" /> Consistently High</label>
+                        <label><input type="radio" name="availability" value="frequent" /> Frequent</label>
+                        <label><input type="radio" name="availability" value="somewhat-low" /> Somewhere Low</label>
+                        <label><input type="radio" name="availability" value="unattempted" /> Unattempted</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brand Awareness</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="brand-awareness" value="A+" /> A+</label>
+                        <label><input type="radio" name="brand-awareness" value="A" /> A</label>
+                        <label><input type="radio" name="brand-awareness" value="B+" /> B+</label>
+                        <label><input type="radio" name="brand-awareness" value="B" /> B</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Market Reach</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="market-reach" value="dominant" /> Dominant (45%+)</label>
+                        <label><input type="radio" name="market-reach" value="sufficient" /> Sufficient (25%+)</label>
+                        <label><input type="radio" name="market-reach" value="acceptable" /> Acceptable (15%+)</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brand Preference</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="brand-preference" value="ultimate-choice" /> Ultimate Choice</label>
+                        <label><input type="radio" name="brand-preference" value="frequent-choice" /> Frequent Choice</label>
+                        <label><input type="radio" name="brand-preference" value="preferred-choice" /> Preferred Choice</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Value for Money</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="value-for-money" value="superb" /> Superb (65%+)</label>
+                        <label><input type="radio" name="value-for-money" value="worthwhile" /> Worthwhile (50%+)</label>
+                        <label><input type="radio" name="value-for-money" value="satisfactory" /> Satisfactory (40%+)</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brand Loyalty</td>
+                    <td>
+                      <div class="radio-group">
+                        <label><input type="radio" name="brand-loyalty" value="committed" /> Committed</label>
+                        <label><input type="radio" name="brand-loyalty" value="appreciated" /> Appreciated</label>
+                        <label><input type="radio" name="brand-loyalty" value="satisfied" /> Satisfied</label>
+                        <label><input type="radio" name="brand-loyalty" value="switchers" /> switchers</label>
+                      </div>
+                      <textarea rows="2" placeholder="Type your comments here (30 words maximum)"></textarea>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Navigation -->
+            <div class="navigation row">
+              <button id="back-btn" class="btn-gray">Back</button>
+              <button id="next-btn" class="btn-green">Next</button>
+              <button id="finish-btn" class="btn-green finishBtn">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="footer">
+        <div class="footer-container">
+            <!-- Left Section -->
+            <div class="footer-left">
+                <img src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png" alt="Brand Index Logo" />
+                <p>
+                    Brand Index is an innovative platform powered by Brands Foundation Pakistan, dedicated to researching and analyzing brand performance across various sectors.
+                </p>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="./assets/images/1 1.png" alt="Facebook" width="20" /></a>
+                    <a href="#"><img src="./assets/images/2 1.png" alt="LinkedIn" width="20" /></a>
+                    <a href="#"><img src="./assets/images/Iocn 12.png" alt="Instagram" width="20" /></a>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <h4>Get in touch!</h4>
+                <p>
+                    We're here to help! Whether you have questions about our brand rankings, want to participate in a survey, or have suggestions for us, feel free to reach out.
+                </p>
+                <p>
+                    Email:
+                    <a href="mailto:info@brandindexpakistan.com">info@brandindexpakistan.com</a>
+                </p>
+                <p>Phone: +92-XXX-XXXXXXX</p>
+                <p>Address: [Insert Address]</p>
+                <p>We'd love to hear from you!</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    </section>
+
+    <script src="./assets/js/Sidebar.js"></script>
+    <script src="./assets/js/brandInformation.js"></script>
+ 
+  </body>
+</html>
