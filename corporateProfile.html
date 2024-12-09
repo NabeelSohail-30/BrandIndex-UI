@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/global.css" />
+        <link rel="stylesheet" href="./assets/css/header.css" />
+        <link rel="stylesheet" href="./assets/css/footer.css" />
+        <!-- <link rel="stylesheet" href="./assets/css/consumer_dashboard.css"> -->
+        <link rel="stylesheet" href="./assets/css/brandInformation.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <title>Corporate Profile</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="upper-nav">
+                    <div class="social-icons">
+                        <img src="./assets/images/1 1.png" alt="" />
+                        <img src="./assets/images/2 1.png" alt="" />
+                        <img src="./assets/images/3 1.png" alt="" />
+                    </div>
+                </div>
+                <div id="login-nav">
+                    <div class="lower-nav">
+                        <div class="logo">
+                            <img src="./assets/images/LOgo 1.png" alt="Logo" />
+                        </div>
+                        <ul>
+                            <li><a href="#">Rankings</a></li>
+                            <li><a href="#">Business Sectors</a></li>
+                            <li><a href="#">Methodology</a></li>
+                            <li><a href="#">Brand Research</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+
+                        <div class="profile-container">
+                            <div class="profile">
+                                <img src="./assets/images/profile.png" alt="profile" />
+                                <div class="profile-name">KG</div>
+                            </div>
+                            <div class="notification">
+                                <img class="notification-icon" src="./assets/images/bell.png" alt="" />
+                            </div>
+                            <div class="logout">
+                                <img class="logout-icon" src="./assets/images/logout (1).png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="section-top">
+                <div class="side-nav-container">
+                    <div id="sidenav_icon" class="side-nav">
+                        <img class="side-nav-icon" src="./assets/images/home.png" alt="" />
+                    </div>
+
+                    <div class="main_heading">
+                        <h2 class="consumer-heading">Brand dashboard</h2>
+                        <p class="consumer-text">
+                            Your Brand, Your Control
+                        </p>
+                    </div>
+                </div>
+                <div class="about-brand">
+                    <p class="about-text">
+                        Manage, Showcase, and Elevate Your Presence
+                    </p>
+                </div>
+
+                <!-- side navbar -->
+                <aside id="side_navbar" class="side_navbar">
+                    <ul class="sidenav-list">
+                        <li>
+                            <span><img src="./assets/images/Polygon 8.png" alt="" /> My Profile</span>
+                        </li>
+
+                        <li><img src="./assets/images/Line 46.png" alt="" /> Update Details</li>
+                        <li><img src="./assets/images/Line 46.png" alt="" /> Security</li>
+
+                        <li>
+                            <span><img src="./assets/images/Polygon 8.png" alt="" /> Rate Favorite Brands</span>
+                        </li>
+
+                        <li><img src="./assets/images/Line 46.png" alt="" /> New Survey</li>
+                        <li><img src="./assets/images/Line 46.png" alt="" /> My Surveys</li>
+
+                        <li>
+                            <span><img src="./assets/images/Polygon 8.png" alt="" /> Feedback</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <main>
+                <!-- Brand Info Upper Section -->
+                <div class="table-container">
+                    <div class="brandinfo-container">
+                        <div>
+                            <p>Welcome Shan Foods</p>
+                            <p class="audit-header">Corporate Profile</p>
+                            <p class="category">Home > Update Details</p>
+                        </div>
+                        <div class="back-button">
+                            <img src="./assets/images/back.png" alt="" />
+                            <a href="#"> Back</a>
+                        </div>
+                    </div>
+
+                    <div class="register-container">
+                        <!-- Tabs -->
+                        <div class="tabs">
+                            <button class="tab" data-tab="Brand-Information">
+                                Brand Information
+                            </button>
+                            <button class="tab" data-tab="Brand-Demographics">
+                                Brand Demographics
+                            </button>
+                            <button class="tab" data-tab="Certifications-&-Compliance">
+                                Certifications & Compliance
+                            </button>
+                            <button class="tab" data-tab="Performance-Metrics">
+                                Performance Metrics
+                            </button>
+                            <button class="tab" data-tab="Other">
+                                Other
+                            </button>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="Brand-Information">
+                            <p class="question-text">Brand Information</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Brand Name</td>
+                                    <td><input type="text" name="brand-name" value="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Category</td>
+                                    <td><input type="text" name="brand-category" value="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Sub-Category</td>
+                                    <td><input type="text" name="brand-sub-category" value="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Business Type</td>
+                                    <td><input type="text" name="business-type" value="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Owner Company</td>
+                                    <td><input type="text" name="brand-owner-company" value="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Year Established (PK)</td>
+                                    <td><input type="number" name="year-established" value="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Slogan</td>
+                                    <td><input type="text" name="brand-slogan" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Profile</td>
+                                    <td>
+                                        <input type="file" name="brand-profile" />
+                                        <span>(Upload pdf, .docx, jpeg)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Logo</td>
+                                    <td>
+                                        <input type="file" name="brand-logo" />
+                                        <span>(Upload jpeg or .png file format)</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="question-text">Company Contact Information</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Office Address</td>
+                                    <td><input type="text" name="office-address" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Number</td>
+                                    <td><input type="number" name="phone-number" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Email Address</td>
+                                    <td><input type="email" name="email-address" /></td>
+                                </tr>
+                            </table>
+                            <p class="question-text">Authorized Person Information</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Name of person</td>
+                                    <td><input type="text" name="person-name" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Designation</td>
+                                    <td><input type="text" name="designation" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Contact Number</td>
+                                    <td><input type="text" name="contact-number" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Email Address</td>
+                                    <td><input type="email" name="person-email" /></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tab-content" id="Brand-Demographics">
+                            <p class="question-text">Brand Market Demographics</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Brand Market Region</td>
+                                    <td>
+                                        <select name="Brand-Market-Region" id="">
+                                            <option value="">Nationwide</option>
+                                            <option value="">Nationwide</option>
+                                            <option value="">Nationwide</option>
+                                            <option value="">Nationwide</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Consumer Income Group</td>
+                                    <td>
+                                        <select name="Consumer-Income-Group" id="">
+                                            <option value="">Upper- and Middle-Class</option>
+                                            <option value="">Middle-Class</option>
+                                            <option value="">Upper-Class</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Target Gender Group</td>
+                                    <td>
+                                        <select name="Target-Gender-Group" id="">
+                                            <option value="">All / Male / Female</option>
+                                            <option value="">Male</option>
+                                            <option value="">Female</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Target Income Level</td>
+                                    <td>
+                                        <select name="Target-Income-Level" id="">
+                                            <option value="">Middle and Upper Middle Group</option>
+                                            <option value="">Upper Middle Group</option>
+                                            <option value="">Middle Group</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Target Age Group</td>
+                                    <td>
+                                        <select name="Target-Age-Group" id="">
+                                            <option value="">All Ages</option>
+                                            <option value="">18 - 30</option>
+                                            <option value="">30 - 50</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tab-content" id="Compliance-&-Characteristics">
+                            <p class="question-text">Compliance</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Incorporation Type</td>
+                                    <td>
+                                        <input type="text" name="Incorporation-Type" placeholder="(Drop down - Proprietor / Partnership / Private Limited / Public Limited)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Copyright & Trademarks</td>
+                                    <td>
+                                        <input type="file" name="Copyright-&-Trademarks" placeholder="Upload Document or PDF" />
+                                        <input type="text" name="Year" placeholder="Year" class="year-input" />
+                                        <button class="add-btn">+</button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p class="question-text">Certifications</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Type Certification Name</td>
+                                    <td>
+                                        <input type="file" name="Type-Certification-Name" placeholder="Upload Certificate" />
+                                        <input type="text" name="Year" placeholder="Year" class="year-input" />
+                                        <button class="add-btn">+</button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p class="question-text">Awards & Achievements</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Type Award Name</td>
+                                    <td>
+                                        <input type="file" name="Type-Award-Name" placeholder="Upload Image or PDF" />
+                                        <input type="text" name="Year" placeholder="Year" class="year-input" />
+                                        <button class="add-btn">+</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tab-content" id="Performance-Metrics">
+                            <p class="question-text">Performance Matrics</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Sales Volume</td>
+                                    <td>
+                                        <input type="text" name="Sales-Volume" placeholder="Annual or monthly sales figures" />
+                                        <input type="text" name="Year" placeholder="Year" class="year-input" />
+                                        <button class="add-btn">+</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Market Share</td>
+                                    <td>
+                                        <input type="text" name="market-share" placeholder="Percentage of Industry share" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Retention Rate</td>
+                                    <td>
+                                        <input type="text" name="Customer-Retention-Rate" placeholder="Percentage of returning customers" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Growth Rate</td>
+                                    <td>
+                                        <input type="text" name="Growth-Rate" placeholder="Year-on-year revenue growth" />
+                                        <input type="text" name="Year" placeholder="Year" class="year-input" />
+                                        <button class="add-btn">+</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="tab-content" id="other">
+                            <p class="question-text">Digital Presence</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>Website Traffic</td>
+                                    <td>
+                                        <input type="text" name="Website-Traffic" />
+                                        <!-- <input type="text" name="Year" placeholder="Year" class="year-input" />
+                            <button class="add-btn">+</button> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Social Media Engagement</td>
+                                    <td>
+                                        <input type="text" name="Social-Media-Engagement" placeholder="select platform" />
+                                        <input type="text" name="followers" placeholder="Followers" class="followers-input" />
+                                        <button class="add-btn">+</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="question-text">Community Engagement</p>
+                            <table class="brand-info-table">
+                                <tr>
+                                    <td>CSR Activities</td>
+                                    <td>
+                                        <input type="text" name="CSR-Activities" placeholder="Philanthropic or community contributions" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="navigation row">
+                            <button id="back-btn" class="btn-gray">Back</button>
+                            <button id="next-btn" class="btn-green">Next</button>
+                            <button id="finish-btn" class="btn-green finishBtn">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer id="footer">
+                <div class="footer-container">
+                    <!-- Left Section -->
+                    <div class="footer-left">
+                        <img src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png" alt="Brand Index Logo" />
+                        <p>
+                            Brand Index is an innovative platform powered by Brands Foundation Pakistan, dedicated to researching and analyzing brand performance across various sectors.
+                        </p>
+                        <div class="footer-social-icons">
+                            <a href="#"><img src="./assets/images/1 1.png" alt="Facebook" width="20" /></a>
+                            <a href="#"><img src="./assets/images/2 1.png" alt="LinkedIn" width="20" /></a>
+                            <a href="#"><img src="./assets/images/Iocn 12.png" alt="Instagram" width="20" /></a>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="footer-right">
+                        <h4>Get in touch!</h4>
+                        <p>
+                            We're here to help! Whether you have questions about our brand rankings, want to participate in a survey, or have suggestions for us, feel free to reach out.
+                        </p>
+                        <p>
+                            Email:
+                            <a href="mailto:info@brandindexpakistan.com">info@brandindexpakistan.com</a>
+                        </p>
+                        <p>Phone: +92-XXX-XXXXXXX</p>
+                        <p>Address: [Insert Address]</p>
+                        <p>We'd love to hear from you!</p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <script src="./assets/js/Sidebar.js"></script>
+        <script src="./assets/js/brandInformation.js"></script>
+    </body>
+</html>

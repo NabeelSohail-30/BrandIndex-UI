@@ -167,12 +167,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 240px;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   background: linear-gradient(135deg, #4CAF50, #81C784);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .mainContainer .panels .card:hover {
@@ -182,10 +184,10 @@
 
 .mainContainer .panels .card .p {
   width: 100%;
-  height: 120px;
+  /* height: 120px; */
   border-radius: 12px 12px 0 0;
   text-align: center;
-  color: #ffffff;
+  color:var(--white2);
   font-size: 20px;
   font-weight: 700;
   padding: 20px;
@@ -202,7 +204,7 @@
   background-color: #689f38;
   border-radius: 0 0 12px 12px;
   text-align: center;
-  color: #ffffff;
+  color:var(--white2);
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -215,15 +217,15 @@
   background-color: #557a2e;
 }
 
-.mainContainer .panels .card .bg2 {
+.mainContainer .panels  .bg2 {
   background: linear-gradient(135deg, #42A5F5, #80D6FF); 
 }
 
-.mainContainer .panels .card .bg3 {
+.mainContainer .panels  .bg3 {
   background: linear-gradient(135deg, #F48FB1, #F8BBD0); 
 }
 
-.mainContainer .panels .card .bg4 {
+.mainContainer .panels  .bg4 {
   background: linear-gradient(135deg, #9C27B0, #D05CE3); 
 }
 

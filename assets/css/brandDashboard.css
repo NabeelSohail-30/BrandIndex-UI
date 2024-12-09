@@ -1,0 +1,28 @@
+.mainContainer .panels .card .p {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    color:var(--white2);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* border: 2px solid black; */
+  }
+
+
+.mainContainer .panels .card .card-head  {
+    color: var(--white2);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    padding-top: 10px;
+    
+}
+.mainContainer .panels .card .card-head img {
+    width: 30px;
+}
