@@ -5,14 +5,14 @@ document.querySelector(".btn-gray").addEventListener("click", () => {
   const newBrandItem = document.createElement("div");
   newBrandItem.classList.add("brand-item");
   newBrandItem.innerHTML = `
-      <label class="numbering">${count}.</label>
-      <select class="inpt" name="brand${count}">
-        <option value="dalda">Dalda</option>
-        <option value="soya-supreme">Soya Supreme</option>
-        <option value="eva-canola">EVA Canola</option>
-        <!-- Add more options as needed -->
-      </select>
-    `;
+    <label class="numbering">${count}.</label>
+    <select class="inpt" name="brand${count}">
+      <option value="dalda">Dalda</option>
+      <option value="soya-supreme">Soya Supreme</option>
+      <option value="eva-canola">EVA Canola</option>
+      <!-- Add more options as needed -->
+    </select>
+  `;
   brandList.appendChild(newBrandItem);
 });
 

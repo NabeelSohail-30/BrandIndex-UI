@@ -1,79 +1,113 @@
-/* Footer */
-footer {
-  background-color: var(--primary);
-  color: var(--white);
-  padding: 20px;
+.user .user-name {
+  font-size: 17px;
 }
-
-.footer-container {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer-left,
-.footer-right {
-  flex: 0.3;
-  min-width: 300px;
-  margin: 10px 0;
-  padding: 0.5rem;
-}
-
-.footer-left img {
-  max-width: 150px;
-}
-
-.footer-left p {
-  margin-top: 10px;
+.user .user-text {
   font-size: 14px;
-  line-height: 1.5;
+}
+.user {
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: 30px;
+  padding-bottom: 0.5rem;
 }
 
-.footer-social-icons {
-  margin-top: 10px;
+.brand-list {
+  margin-bottom: 10px;
+  max-height: 250px;
+  /* border: 1px solid black; */
+  overflow-y: auto;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+}
+
+.numbering {
+  width: 20px;
+  font-weight: bold;
+  color: #666;
+  margin-right: 10px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* ///////// */
+
+.tabs {
   display: flex;
   gap: 10px;
 }
 
-.footer-social-icons a {
-  text-decoration: none;
+.tab {
+  padding: 10px 20px;
+  background: var(--bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background: var(--primary);
   color: var(--white);
-  font-size: 20px;
 }
 
-.footer-right h4 {
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.rate-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.rate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
-  font-size: 18px;
+  background-color: var(--lightgreen);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.tab-content .rate-list .rate-item .rating-options {
+  /* border: 1px solid black; */
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
 }
 
-.footer-right p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 10px;
+.register-container .navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-right a {
-  color: var(--white);
-  text-decoration: none;
+.section .register-container .tab-content .question-text {
+  background-color: var(--lightgray);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.tab-content .rate-list .rate-item .trust {
+  font-weight: 700;
 }
 
-.footer-right a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-right {
-    margin: 10px 0;
-  }
-  .footer-social-icons {
-    justify-content: center;
-  }
+.section .register-container .rate-your-brand {
+  font-size: large;
+  border-bottom: 2px solid var(--primary);
+  width: max-content;
+  padding: 0.5rem;
+  font-weight: 500;
 }
