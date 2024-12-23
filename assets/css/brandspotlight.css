@@ -254,3 +254,69 @@
     margin-bottom: 10px;
 }
 
+.scores-circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.circle-badge-container {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .badge-svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .red-circle .circle-background {
+    fill:var(--darkred);
+  }
+  
+  .inner-circle {
+    fill: white;
+  }
+  
+  .curved-text {
+    fill: white;
+    font-size: 16px; /* Reduce font size for alignment */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .percentage {
+    font-size: 40px; /* Slightly reduce size */
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle; /* Center text vertically */
+  }
+
+  .red-circle .percentage {
+    fill: var(--darkred);
+  }
+
+
+  .darkblue-circle .circle-background {
+    fill: var(--darkblue);
+  }
+  .darkblue-circle .percentage {
+    fill: var(--darkblue);
+  }
+
+  .skyblue-circle .circle-background {
+    fill: var(--skyblue);
+  }
+  .skyblue-circle .percentage {
+    fill: var(--skyblue);
+  }
+
+  .gray-circle .circle-background {
+    fill: var(--darkgray);
+  }
+  .gray-circle .percentage {
+    fill: var(--darkgray);
+  }
