@@ -10,20 +10,30 @@
   --gray: #959595;
   --lightgreen: #d9f2d0;
   --lightgray: #eae7e7;
-  --red:#d71e1e;
-  --darkred:#d60004;
-  --skyblue:#1ba6ec;
-  --darkblue:#173e63;
-  --golden:#d29f00;
-  --darkgray:#545454;
 }
 
-/* Root CSS */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+::selection {
+  background: var(--link-color);
+  color: var(--white);
 }
 
 .main-container {
@@ -97,7 +107,8 @@ header .lower-nav .profile-container .notification .notification-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4rem 0 4rem;
+  /* padding: 0 4rem 0 4rem; */
+  padding: 0 4rem;
   position: relative;
 }
 .section-top .main_heading .consumer-heading {
@@ -108,7 +119,7 @@ header .lower-nav .profile-container .notification .notification-icon {
   font-size: 14px;
 }
 .section-top .about-brand {
-  width: 350px;
+  width: 400px;
   /* border: 1px solid black; */
 }
 .section-top .about-brand .about-text {
@@ -155,7 +166,11 @@ header .lower-nav .profile-container .notification .notification-icon {
   border: 1px solid var(--bg-light);
   border-radius: 5px;
   background: transparent;
-  cursor: pointer;
+  cursor: pointer !important;
+}
+
+.inpt:hover {
+  border: 1px solid var(--primary-hover) !important;
 }
 
 .side-nav-container {
@@ -171,7 +186,7 @@ header .lower-nav .profile-container .notification .notification-icon {
 .side_navbar {
   position: absolute;
   top: 70px;
-  left: 0;
+  left: -200px;
   width: 200px;
   height: max-content;
   background-color: var(--white2);

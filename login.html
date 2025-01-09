@@ -14,217 +14,81 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <nav>
-        <div class="upper-nav">
-          <div class="social-icons">
-            <img src="./assets/images/1 1.png" alt="" />
-            <img src="./assets/images/2 1.png" alt="" />
-            <img src="./assets/images/3 1.png" alt="" />
-          </div>
+
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">
+          Login Form
         </div>
-        <div id="register-nav-bar">
-          <div class="register-nav">
-            <div>
-              <img src="./assets/images/LOgo 1.png" alt="" />
-            </div>
-            <p>
-              Register today and play a key role in shaping the monthly rankings
-              of Pakistan's top brands.
-            </p>
-          </div>
+        <div class="title signup">
+          Signup Form
         </div>
-        <div id="login-nav">
-          <div class="lower-nav">
-            <div class="logo">
-              <img src="./assets/images/LOgo 1.png" alt="Logo" />
-            </div>
-            <ul>
-                <li><a href="./ranking.html" target="_self">Rankings</a></li>
-                <li><a href="./businessSector.html" target="_self">Business Sectors</a></li>
-                <li><a href="#" target="_self">Methodology</a></li>
-                <li><a href="#" target="_self">Brand Research</a></li>
-                <li><a href="#" target="_self">About Us</a></li>
-            </ul>
-          </div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
         </div>
-      </nav>
-    </header>
-
-    <!-- ////// Login and Signup Form /////// -->
-    <div class="main-container">
-      <div class="container">
-        <div class="tabs">
-          <div class="tab active" id="login-tab">
-            <img src="./assets/images/2 3.png" alt="" />Login
-          </div>
-          <div class="tab" id="register-tab">
-            <img src="./assets/images/3 2.png" alt="" />Register
-          </div>
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="pass-link">
+              <a href="#">Forgot password?</a>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+              Not a member? <a href="">Signup now</a>
+            </div>
+          </form>
+          <form action="#" class="signup">
+            <div class="field">
+              <input type="text" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" required>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
         </div>
-
-        <!-- Login Form -->
-        <form id="login-form" class="active">
-          <div class="login-container">
-            <div class="form-group">
-              <label for="email">Email Address / Mobile Number</label>
-              <input class="inpt" type="text" id="email" />
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input class="inpt" class="pass" type="password" id="password" />
-              <img class="eye" src="./assets/images/hidden.png" alt="" />
-            </div>
-            <button type="submit" class="btn-green">Login</button>
-            <div class="form-footer">
-              <a href="#">Forgot Password?</a>
-            </div>
-          </div>
-        </form>
-
-        <!-- Signup Form -->
-        <form id="register-form">
-          <div class="register-container">
-            <div class="row">
-              <div class="form-group">
-                <label for="first-name">First Name</label>
-                <input class="inpt" type="text" id="first-name" />
-              </div>
-
-              <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input class="inpt" type="text" id="last-name" />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group">
-                <label for="email-register">Email Address</label>
-                <input class="inpt" type="email" id="email-register" />
-              </div>
-              <div class="form-group">
-                <label for="mobile">Mobile Number</label>
-                <input class="inpt" type="text" id="mobile" />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group">
-                <label for="gender">Select Gender</label>
-                <select class="inpt" id="gender">
-                  <option value="">Select Gender</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="profession">Select Profession</label>
-                <select class="inpt" id="profession">
-                  <option value="">Select Profession</option>
-                  <option value="engineer">Engineer</option>
-                  <option value="teacher">Teacher</option>
-                  <option value="student">Student</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group">
-                <label for="country">Country</label>
-                <input class="inpt" type="text" id="country" />
-              </div>
-              <div class="form-group">
-                <label for="state">State</label>
-                <input class="inpt" type="text" id="state" />
-              </div>
-              <div class="form-group">
-                <label for="city">City</label>
-                <input class="inpt" type="text" id="city" />
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="form-group">
-                <label for="password-register">Password</label>
-                <input class="inpt" type="password" id="password-register" />
-              </div>
-              <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input class="inpt" type="password" id="confirm-password" />
-              </div>
-            </div>
-
-            <div class="terms-check">
-              <input type="checkbox" id="terms" />
-              <label for="terms">
-                By clicking register, I agree to the
-                <a href="#" target="_blank">Privacy Policy</a> and
-                <a href="#" target="_blank">terms and conditions</a> of Brand
-                Index of Pakistan.
-              </label>
-            </div>
-
-            <div class="row">
-              <button type="submit" class="btn-green">Register</button>
-            </div>
-          </div>
-        </form>
       </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer id="footer">
-      <div class="footer-container">
-        <!-- Left Section -->
-        <div class="footer-left">
-          <img
-            src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png"
-            alt="Brand Index Logo"
-          />
-          <p>
-            Brand Index is an innovative platform powered by Brands Foundation
-            Pakistan, dedicated to researching and analyzing brand performance
-            across various sectors.
-          </p>
-          <div class="footer-social-icons">
-            <a href="#"
-              ><img src="./assets/images/1 1.png" alt="Facebook" width="20"
-            /></a>
-            <a href="#"
-              ><img src="./assets/images/2 1.png" alt="LinkedIn" width="20"
-            /></a>
-            <a href="#"
-              ><img
-                src="./assets/images/Iocn 12.png"
-                alt="Instagram"
-                width="20"
-            /></a>
-          </div>
-        </div>
-
-        <!-- Right Section -->
-        <div class="footer-right">
-          <h4>Get in touch!</h4>
-          <p>
-            We're here to help! Whether you have questions about our brand
-            rankings, want to participate in a survey, or have suggestions for
-            us, feel free to reach out.
-          </p>
-          <p>
-            Email:
-            <a href="mailto:info@brandindexpakistan.com"
-              >info@brandindexpakistan.com</a
-            >
-          </p>
-          <p>Phone: +92-XXX-XXXXXXX</p>
-          <p>Address: [Insert Address]</p>
-          <p>We'd love to hear from you!</p>
-        </div>
-      </div>
-    </footer>
   </body>
-  <script src="./assets/js/login.js"></script>
+  <!-- <script src="./assets/js/login.js"></script> -->
+   <script>
+    const loginText = document.querySelector(".title-text .login");
+const loginForm = document.querySelector("form.login");
+const loginBtn = document.querySelector("label.login");
+const signupBtn = document.querySelector("label.signup");
+const signupLink = document.querySelector("form .signup-link a");
+signupBtn.onclick = (()=>{
+  loginForm.style.marginLeft = "-50%";
+  loginText.style.marginLeft = "-50%";
+});
+loginBtn.onclick = (()=>{
+  loginForm.style.marginLeft = "0%";
+  loginText.style.marginLeft = "0%";
+});
+signupLink.onclick = (()=>{
+  signupBtn.click();
+  return false;
+});
+   </script>
 </html>
