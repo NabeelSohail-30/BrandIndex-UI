@@ -20,22 +20,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-html,
-body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-::selection {
-  background: var(--link-color);
-  color: var(--white);
-}
-
 .main-container {
   background-color: var(--bg);
   display: flex;

@@ -4,17 +4,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  place-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* place-items: center; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 ::selection {
   background: var(--link-color);
@@ -86,3 +88,7 @@ body {
   outline: none;
   border: 1px solid #56b569;
 }
+
+/* ------------------------------------ */
+/* -------- Main Styles -------------- */
+/* ------------------------------------ */
