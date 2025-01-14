@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login and Signup Toggle</title>
+    <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
   </head>
   <body>
@@ -16,20 +17,20 @@
             </div>
             <div class="form-fields">
               <div class="col1">
-                <input type="text" placeholder="First Name" required />
-                <input type="email" placeholder="Email" required />
-                <input type="text" placeholder="Gender" required />
-                <input
+                <input class="form-input" type="text" placeholder="First Name" required />
+                <input class="form-input" type="email" placeholder="Email" required />
+                <input class="form-input" type="text" placeholder="Gender" required />
+                <input class="form-input"
                   type="password"
                   placeholder="Password"
                   required
                 />
               </div>
               <div class="col1">
-                <input type="text" placeholder="Last Name" required />
-                <input type="text" placeholder="Mobile Number" required />
-                <input type="text" placeholder="Profession" required />
-                <input
+                <input class="form-input" type="text" placeholder="Last Name" required />
+                <input class="form-input" type="text" placeholder="Mobile Number" required />
+                <input class="form-input" type="text" placeholder="Profession" required />
+                <input class="form-input"
                   type="password"
                   placeholder="Confirm password"
                   required
@@ -37,7 +38,7 @@
               </div>
             </div>
             <div>
-              <button>Sign Up</button>
+              <button class="btn-green">Sign Up</button>
             </div>
           </form>
         </div>
@@ -45,9 +46,9 @@
         <div class="form-control signin-form">
           <form action="#">
             <h2>Login</h2>
-            <input type="text" placeholder="Username" required />
-            <input type="password" placeholder="Password" required />
-            <button>Login</button>
+            <input class="form-input" type="text" placeholder="Username" required />
+            <input class="form-input" type="password" placeholder="Password" required />
+            <button class="btn-green">Login</button>
           </form>
         </div>
       </div>
@@ -66,7 +67,7 @@
               Welcome back! We are so happy to have you here. It's great to see
               you again. We hope you had a safe and enjoyable time away.
             </p>
-            <button id="signup-btn">No account yet? Signup.</button>
+            <button id="signup-btn" class="btn-white">No account yet? Signup.</button>
           </div>
         </div>
 
@@ -84,7 +85,7 @@
               an account to get access to exclusive offers, rewards, and
               discounts.
             </p>
-            <button id="signin-btn">Already have an account? Signin.</button>
+            <button id="signin-btn" class="btn-white">Already have an account? Signin.</button>
           </div>
         </div>
       </div>
