@@ -1,7 +1,7 @@
 header{
     width: 80%;
     height: 68px;
-    background-color: #959495;
+    background-color: #179a33;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +9,8 @@ header{
     margin-top: 20px;
     border-radius: 8px;
     position: static;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .header-mid{
@@ -31,16 +33,45 @@ header{
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 16px;
+    gap: 18px;
 }
 
-.header-mid nav ul li{
-    margin: 0 10px;
-}
-
-.header-mid nav ul li a{
+.header-mid nav ul li a {
+    position: relative; /* Necessary for positioning the pseudo-element */
+    padding: 8px 14px;
+    border-radius: 6px;
     text-decoration: none;
-    color: #000;
     font-size: 16px;
     font-weight: 500;
+    color: #ffffff;
+    overflow: hidden; /* Ensures the pseudo-element stays within bounds */
+    z-index: 1; /* Ensures content stays above the pseudo-element */
+    display: inline-block; /* Prevents pseudo-element issues with inline text */
+    transition: color 0.5s ease; /* Smooth color transition */
+}
+
+.header-mid nav ul li a::before {
+    content: ""; /* Adds the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: -100%; /* Starts off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Background color for hover effect */
+    z-index: -1; /* Keeps it behind the text */
+    transition: transform 0.7s ease; /* Smooth transition for the sliding effect */
+    transform: translateX(0);
+}
+
+.header-mid nav ul li a:hover::before {
+    transform: translateX(100%); /* Slides the pseudo-element across the element */
+}
+
+.header-mid nav ul li a:hover {
+    color: #434142; /* Text color changes */
+}
+
+.header-mid nav ul li a.active{
+    background-color: #ffffff;
+    color: #434142;
 }
