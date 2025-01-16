@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/sidebar.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
   <style>
     body {
@@ -17,12 +19,100 @@
       justify-content: flex-start;
       align-items: flex-start;
     }
-    
+
+    main {
+      width: 88%;
+      height: 100%;
+      margin: 0px 10px;
+    }
+
+    .main-section {
+      width: 80%;
+      height: auto;
+      margin: 40px auto;
+      padding: 40px 0px;
+      border: 1px solid red;
+    }
+
+    .main-section .wrapper {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+      background-color: burlywood;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .stats-container {
+      width: 80%;
+      margin: 30px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .stat-box {
+      width: 100%;
+      padding: 16px;
+      background-color: burlywood;
+      text-align: center;
+    }
+
+    .cards-container {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .card {
+      width: 100%;
+      height: 180px;
+      padding: 16px;
+      background-color: burlywood;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-text {
+      width: 100%;
+      height: 100%;
+      background-color: aquamarine;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-action-btn {
+      background-color: green;
+      color: white;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
   </style>
   <body>
     <aside>
       <div class="sidebar-header">
-        <h3 class="sidebar-title"><img src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png" alt=""></h3>
+        <h3 class="sidebar-title">
+          <img
+            src="./assets/images/BRAND INDEX Concepts Initial Logo 1.png"
+            alt=""
+          />
+        </h3>
         <span><a href="#" id="toggleSidebar">|||</a></span>
       </div>
 
@@ -42,17 +132,78 @@
         </ul>
       </div>
     </aside>
-    <main>
-      <h1>Dashboard</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quidem, quod, quos quas quae quibusdam
-      </p>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptates, quidem, quod, quos quas quae quibusdam
-      </p>
+    <main>
+      <header>
+        <!-- <div class="header-left">
+            <h3 class="header-title">Dashboard</h3>
+          </div> -->
+        <div class="header-mid">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="header-right">
+            <a href="#"><img src="./assets/images/1 1.png" alt=""></a>
+          </div> -->
+      </header>
+
+      <section class="main-section">
+        <div class="wrapper">
+          <h1>Welcome to the Auditor Dashboard</h1>
+          <span><strong>Brand Performance & Audit Control Center</strong></span>
+          <span>
+            Monitor, Analyze, and Report Consumer Insights for Optimal Brand
+            Transparency and Accountability
+          </span>
+        </div>
+
+        <div class="stats-container">
+          <div class="stat-box">
+            <span>New Brands</span>
+            <span><strong>17</strong></span>
+          </div>
+          <div class="stat-box">
+            <span>New Brands</span>
+            <span><strong>17</strong></span>
+          </div>
+          <div class="stat-box">
+            <span>New Brands</span>
+            <span><strong>17</strong></span>
+          </div>
+          <div class="stat-box">
+            <span>New Brands</span>
+            <span><strong>17</strong></span>
+          </div>
+        </div>
+
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-text">Brand Management</div>
+            <div class="card-action-btn">Access Panel</div>
+          </div>
+          <div class="card">
+            <div class="card-text">Brand Management</div>
+            <div class="card-action-btn">Access Panel</div>
+          </div>
+          <div class="card">
+            <div class="card-text">Brand Management</div>
+            <div class="card-action-btn">Access Panel</div>
+          </div>
+          <div class="card">
+            <div class="card-text">Brand Management</div>
+            <div class="card-action-btn">Access Panel</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2021</p>
+      </footer>
     </main>
   </body>
   <script src="./assets/js/Sidebar.js"></script>
