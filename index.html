@@ -12,30 +12,99 @@
       <div class="forms-container">
         <div class="form-control signup-form">
           <form action="#">
-            <div>
+            <!-- <div>
               <h2>Sign Up</h2>
-            </div>
+            </div> -->
             <div class="form-fields">
               <div class="col1">
-                <input class="form-input" type="text" placeholder="First Name" required />
-                <input class="form-input" type="email" placeholder="Email" required />
-                <input class="form-input" type="text" placeholder="Gender" required />
-                <input class="form-input"
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  class="form-input"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <!-- <input class="form-input" type="text" placeholder="Gender" required /> -->
+                <select name="gender" id="" class="form-input">
+                  <option value="">Select Gender</option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+                <!-- <input class="form-input" type="text" placeholder="Gender" required /> -->
+                <!-- <input class="form-input"
                   type="password"
                   placeholder="Password"
                   required
-                />
+                /> -->
               </div>
               <div class="col1">
-                <input class="form-input" type="text" placeholder="Last Name" required />
-                <input class="form-input" type="text" placeholder="Mobile Number" required />
-                <input class="form-input" type="text" placeholder="Profession" required />
-                <input class="form-input"
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="Mobile Number"
+                  required
+                />
+                <!-- <input class="form-input" type="text" placeholder="Profession" required /> -->
+                <select name="gender" id="" class="form-input">
+                  <option value="">Select Profession</option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+                <!-- <input class="form-input" type="text" placeholder="Profession" required /> -->
+                <!-- <input class="form-input"
                   type="password"
                   placeholder="Confirm password"
                   required
-                />
+                /> -->
               </div>
+            </div>
+            <div class="col-3">
+              <select name="gender" id="" class="form-input">
+                <option value="">Country</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+              <select name="gender" id="" class="form-input">
+                <option value="">State</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+              <select name="gender" id="" class="form-input">
+                <option value="">City</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+              </select>
+            </div>
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Profession"
+              required
+            />
+            <div class="col-2">
+              <input
+                class="form-input"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <input
+                class="form-input"
+                type="password"
+                placeholder="Confirm password"
+                required
+              />
             </div>
             <div>
               <button class="btn-green">Sign Up</button>
@@ -45,9 +114,19 @@
 
         <div class="form-control signin-form">
           <form action="#">
-            <h2>Login</h2>
-            <input class="form-input" type="text" placeholder="Username" required />
-            <input class="form-input" type="password" placeholder="Password" required />
+            <!-- <h2>Login</h2> -->
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Username"
+              required
+            />
+            <input
+              class="form-input"
+              type="password"
+              placeholder="Password"
+              required
+            />
             <!-- <button class="btn-green">Login</button> -->
             <a href="./auditorDashboard.html" class="btn-green">Login</a>
           </form>
@@ -68,7 +147,9 @@
               Welcome back! We are so happy to have you here. It's great to see
               you again. We hope you had a safe and enjoyable time away.
             </p>
-            <button id="signup-btn" class="btn-white">No account yet? Signup.</button>
+            <button id="signup-btn" class="btn-white">
+              No account yet? Signup.
+            </button>
           </div>
         </div>
 
@@ -86,7 +167,9 @@
               an account to get access to exclusive offers, rewards, and
               discounts.
             </p>
-            <button id="signin-btn" class="btn-white">Already have an account? Signin.</button>
+            <button id="signin-btn" class="btn-white">
+              Already have an account? Signin.
+            </button>
           </div>
         </div>
       </div>
