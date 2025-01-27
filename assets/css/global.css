@@ -25,8 +25,8 @@ body {
   font-size: 14px;
 }
 ::selection {
-  background: var(--link-color);
-  color: var(--white);
+  background: #23a03d;
+  color: #ffffff;
 }
 
 /* ------------------------------------ */
