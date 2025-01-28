@@ -51,39 +51,49 @@ body {
     margin: auto;
 }
 
-.welcome {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.welcome h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.stat-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid;
+    padding: 20px;
 }
 
 .stats {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    width: auto;
+    border: 2px solid red;
 }
 
 .stat {
-    background-color: #e5e7eb;
+    background-color: #22c55e;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    flex: 1;
+    /* flex: 1; */
     margin: 0 10px;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
 }
 
-.stat h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+.stat .stat-img{
+    display: flex;
+    width: 20px;
+    justify-content: center;
+    align-content: center;
 }
 
-.stat p {
-    font-size: 18px;
-    font-weight: bold;
+.stat .stat-img img{
+    width: 20px;
+}
+
+.stat .stat-text{
+    text-align: right;
 }
 
 .portal-section {
