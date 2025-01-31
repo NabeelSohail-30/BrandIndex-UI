@@ -24,10 +24,10 @@ body {
   /* background-color: #ddd; */
   font-size: 14px;
 }
-::selection {
+/* ::selection {
   background: #23a03d;
   color: #ffffff;
-}
+} */
 
 /* ------------------------------------ */
 /* -------- Button Styles -------------- */
