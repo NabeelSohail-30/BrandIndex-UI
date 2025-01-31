@@ -13,7 +13,68 @@
     <link rel="stylesheet" href="./assets/css/auditorDashboard.css" />
   </head>
   <body>
-    <div class="sidebar"></div>
+    <div class="sidebar">
+      <!-- Top Section -->
+      <div class="top">
+        <img src="https://placehold.co/20x20" alt="Logo" />
+        <h2>Brand Index</h2>
+      </div>
+
+      <hr class="seperator">
+
+      <!-- Middle Section (Navigation Items) -->
+      <div class="middle">
+        <div class="nav-item">
+          <img src="https://placehold.co/20x20" alt="Home" />
+          <span>Dashboard</span>
+        </div>
+        <!-- Analytics with Submenu -->
+        <div class="nav-item has-submenu">
+          <div class="nav-main">
+            <img src="https://placehold.co/20x20" alt="Analytics" />
+            <span>Analytics</span>
+            <img src="https://placehold.co/20x20" class="arrow-icon" alt="Expand" />
+          </div>
+          <div class="submenu">
+            <div class="submenu-item">Reports</div>
+            <div class="submenu-item">Traffic</div>
+            <div class="submenu-item">User Insights</div>
+          </div>
+        </div>
+        <div class="nav-item">
+          <img src="https://placehold.co/20x20" alt="Users" />
+          <span>Users</span>
+        </div>
+        <!-- <div class="nav-item">
+          <img src="https://placehold.co/20x20" alt="Settings" />
+          <span>Settings</span>
+        </div> -->
+      </div>
+
+      
+      <!-- Footer Section -->
+      <div class="footer">
+        <div class="footer-item">
+          <img src="https://placehold.co/20x20" alt="Logout" />
+          <span>Logout</span>
+        </div>
+        <div class="footer-item">
+          <img src="https://placehold.co/20x20" alt="Logout" />
+          <span>Setting</span>
+        </div>
+      </div>
+      
+      <hr class="seperator">
+      
+      <!-- Profile Panel -->
+      <div class="profile-panel">
+        <img src="https://placehold.co/20x20" alt="Profile" />
+        <div class="profile-info">
+          <h3>Nabeel Sohail</h3>
+          <p>View Profile</p>
+        </div>
+      </div>
+    </div>
 
     <div class="main-content">
       <div class="header">
@@ -132,4 +193,5 @@
       </div>
     </div>
   </body>
+  <script src="./assets/js/Sidebar.js" defer></script>
 </html>
