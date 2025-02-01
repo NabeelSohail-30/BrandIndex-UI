@@ -189,10 +189,12 @@ body {
 
 .portals {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center items if there's extra space */
+  gap: 20px; /* Add gap for spacing */
   padding: 20px 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Ensure items wrap to the next line */
 }
+
 /* Portal Styling */
 .portal {
   background: linear-gradient(135deg, #6a11cb, #a872e0);
