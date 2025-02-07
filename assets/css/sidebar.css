@@ -1,14 +1,14 @@
 /* Sidebar */
 .sidebar {
   width: 250px;
-  height: 90vh;
+  height: 100vh;
   background: linear-gradient(135deg, #6a11cb, #8b5cf6);
   color: #fff;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin: 40px 20px;
-  border-radius: 16px;
+  /* margin: 40px 20px; */
+  /* border-radius: 16px; */
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
