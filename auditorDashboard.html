@@ -344,8 +344,16 @@
       box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     }
 
+    .stat .stat-img{
+      border: 1px solid var(--border-gray);
+      width: auto;
+      height: auto;
+      padding: 6px;
+    }
+
     .stat .stat-img img {
       width: 36px;
+      height: 100%;
       transition: transform 0.3s ease-in-out;
     }
 
@@ -359,7 +367,7 @@
     }
 
     .stat .stat-text h3 {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 600;
     }
 
@@ -368,13 +376,36 @@
       font-weight: bold;
     }
 
+    .title-portal{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title-portal hr {
+      width: 30%;
+      height: 2px;
+      background-color: var(--text-dark);
+      border-radius: 10px;
+      border: none;
+    }
+
+    .title-portal h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0px 20px;
+    }
+
     .mainContainer .panels {
       display: flex;
-      /* gap: 20px; */
+      gap: 30px;
       /* margin-top: 20px; */
       /* margin: 20px auto; */
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     .card {
@@ -564,6 +595,12 @@
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="title-portal">
+              <hr>
+              <h2>Select Portal</h2>
+              <hr>
             </div>
 
             <!-- Panels -->
