@@ -495,6 +495,117 @@
       text-align: center;
       box-shadow: 0px -2px 4px var(--shadow-color);
     }
+
+    /* Notification Panel - Glassmorphism Style */
+    .notification-panel {
+      position: absolute;
+      top: 76px;
+      right: 20px;
+      width: 320px;
+      background: rgb(239 243 247);
+            /* backdrop-filter: blur(12px); */
+      border-radius: 12px;
+      padding: 15px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-15px);
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Show notification panel */
+    .notification-panel.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* Header Styling */
+    .notif-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    .notif-header h3 {
+      font-size: 16px;
+      color: #000000;
+      font-weight: 600;
+    }
+
+    #clearAll {
+      background: #008a17;
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: background 0.3s ease;
+    }
+
+    #clearAll:hover {
+      background: #a1a1a1;
+    }
+
+    /* Notification List */
+    .notification-panel ul {
+      list-style: none;
+      padding: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    /* Individual Notification Items */
+    .notif-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgb(255 255 255);
+      border: 1px solid #0000007a;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      color: #000000;
+      font-size: 14px;
+      transition: transform 0.2s ease, opacity 0.3s ease;
+    }
+
+    .notif-item:hover {
+      /* transform: scale(1.02); */
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Mark Read Button */
+    .mark-read {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .mark-read:hover {
+      background: #3b8b3b;
+      transform: scale(1.1);
+    }
+
+    /* Scrollbar Styling */
+    .notification-panel ul::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .notification-panel ul::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+    }
   </style>
   <body>
     <div class="sidebar">
@@ -560,8 +671,26 @@
           <h4>Brand Performance & Auditor Control Center</h4>
         </div>
         <div class="header-sub-wrapper">
-          <img src="./assets/images/notification.svg" />
+          <img src="./assets/images/notification.svg" id="notif-icon" />
         </div>
+      </div>
+
+      <!-- Notification Popup -->
+      <div class="notification-panel" id="notificationPanel">
+        <div class="notif-header">
+          <h3>Notifications</h3>
+          <button id="clearAll">Clear All</button>
+        </div>
+        <ul id="notificationList">
+          <li class="notif-item">
+            <p>🔔 New audit report is available.</p>
+            <button class="mark-read">✓</button>
+          </li>
+          <li class="notif-item">
+            <p>📊 Brand performance analytics updated.</p>
+            <button class="mark-read">✓</button>
+          </li>
+        </ul>
       </div>
 
       <main>
@@ -617,30 +746,22 @@
             <div class="panels">
               <div class="card">
                 <div class="icon-section">🔍</div>
-                <div class="text-section">
-                  Brands Management
-                </div>
+                <div class="text-section">Brands Management</div>
                 <div class="access-panel">Access Panel</div>
               </div>
               <div class="card">
                 <div class="icon-section">🔍</div>
-                <div class="text-section">
-                  Brands Rankings
-                </div>
+                <div class="text-section">Brands Rankings</div>
                 <div class="access-panel">Access Panel</div>
               </div>
               <div class="card">
                 <div class="icon-section">🔍</div>
-                <div class="text-section">
-                  Analytics & Insights
-                </div>
+                <div class="text-section">Analytics & Insights</div>
                 <div class="access-panel">Access Panel</div>
               </div>
               <div class="card">
                 <div class="icon-section">🔍</div>
-                <div class="text-section">
-                  Brands Audits Reports
-                </div>
+                <div class="text-section">Brands Audits Reports</div>
                 <div class="access-panel">Access Panel</div>
               </div>
             </div>
