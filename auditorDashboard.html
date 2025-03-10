@@ -45,8 +45,9 @@
     .sidebar {
       width: 250px;
       height: 100vh;
-      background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
-      color: var(--text-light);
+      /* background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); */
+      background-color: #6c6c6c;
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       padding: 20px;
@@ -141,7 +142,7 @@
     }
 
     .submenu-item:hover {
-      color: #ffd700;
+      color: black;
     }
 
     /* Open submenu */
@@ -239,7 +240,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+      background: linear-gradient(
+        135deg,
+        var(--primary-green),
+        var(--secondary-green)
+      );
       padding: 15px;
       color: var(--text-light);
       box-shadow: 0px 4px 8px var(--shadow-color);
@@ -329,14 +334,15 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
-      width: 210px;
-      height: 100px;
+      width: 200px;
+      height: 90px;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-content: center;
       box-shadow: 0px 4px 6px var(--shadow-color);
       transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      border: 1px solid #00000075;
     }
 
     .stat:hover {
@@ -344,15 +350,15 @@
       box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
     }
 
-    .stat .stat-img{
-      border: 1px solid var(--border-gray);
+    .stat .stat-img {
+      /* border: 1px solid var(--border-gray); */
       width: auto;
       height: auto;
-      padding: 6px;
+      /* padding: 6px; */
     }
 
     .stat .stat-img img {
-      width: 36px;
+      width: 56px;
       height: 100%;
       transition: transform 0.3s ease-in-out;
     }
@@ -362,12 +368,14 @@
     }
 
     .stat .stat-text {
-      text-align: right;
+      /* text-align: right; */
       color: var(--text-dark);
+      /* border: 3px solid #abadab; */
+      padding: 10px 20px;
     }
 
     .stat .stat-text h3 {
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 600;
     }
 
@@ -376,7 +384,7 @@
       font-weight: bold;
     }
 
-    .title-portal{
+    .title-portal {
       display: flex;
       flex-direction: row;
       gap: 10px;
@@ -410,10 +418,16 @@
 
     .card {
       width: 240px;
-      height: 240px;
+      height: 220px;
       border-radius: 12px;
       box-shadow: 0px 6px 15px var(--shadow-color);
-      background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+      /* background: linear-gradient(
+        135deg,
+        var(--primary-green),
+        var(--secondary-green)
+      ); */
+      background-color: #d1d5db;
+      border: 1px solid #00000075;
       color: var(--text-light);
       display: flex;
       flex-direction: column;
@@ -421,40 +435,57 @@
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      position: relative;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 10px 25px var(--shadow-color);
     }
-    
-    .card .p {
+
+    .icon-section {
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .text-section {
       text-align: center;
       font-size: 20px;
       font-weight: bold;
       padding: 20px;
       text-transform: uppercase;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(109, 108, 108, 0.685);
+      color: #ffffff;
+    }
+
+    .access-panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .card .access-panel {
-      height: 50px;
-      /* background-color: var(--secondary-green); */
-      background-color: rgb(255, 255, 255, 0.3);
-      text-align: center;
-      font-size: 16px;
-      font-weight: 600;
+      background: rgba(0, 0, 0, 0.6);
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background-color 0.3s ease;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
-    
-    .card .access-panel:hover {
-      background-color: var(--primary-green);
+
+    .card:hover .access-panel {
+      opacity: 1;
     }
 
     footer {
@@ -469,7 +500,6 @@
     <div class="sidebar">
       <!-- Top Section -->
       <div class="top">
-        <!-- <img src="https://placehold.co/20x20" alt="Logo" /> -->
         <h2>Brand Index</h2>
       </div>
 
@@ -478,45 +508,36 @@
       <!-- Middle Section (Navigation Items) -->
       <div class="middle">
         <div class="nav-item">
-          <img src="https://placehold.co/20x20" alt="Home" />
-          <span>Dashboard</span>
+          <span>Update Details</span>
         </div>
         <!-- Analytics with Submenu -->
-        <div class="nav-item has-submenu">
+        <div class="nav-item has-submenu active">
           <div class="nav-main">
-            <img src="https://placehold.co/20x20" alt="Analytics" />
-            <span>Analytics</span>
+            <span>Audits</span>
             <img
-              src="https://placehold.co/20x20"
+              src="./assets/images/caret-down-svgrepo-com.svg"
               class="arrow-icon"
               alt="Expand"
             />
           </div>
           <div class="submenu">
-            <div class="submenu-item">Reports</div>
-            <div class="submenu-item">Traffic</div>
-            <div class="submenu-item">User Insights</div>
+            <div class="submenu-item">New Audits</div>
+            <div class="submenu-item">Completed Audits</div>
+            <div class="submenu-item">Pending Audits</div>
+            <div class="submenu-item">Rejected Audits</div>
           </div>
         </div>
-        <div class="nav-item">
-          <img src="https://placehold.co/20x20" alt="Users" />
-          <span>Users</span>
-        </div>
-        <!-- <div class="nav-item">
-          <img src="https://placehold.co/20x20" alt="Settings" />
-          <span>Settings</span>
-        </div> -->
       </div>
 
       <!-- Footer Section -->
       <div class="footer">
         <div class="footer-item">
-          <img src="https://placehold.co/20x20" alt="Logout" />
+          <img src="./assets/images/logout-2-svgrepo-com.svg" alt="Logout" />
           <span>Logout</span>
         </div>
         <div class="footer-item">
-          <img src="https://placehold.co/20x20" alt="Logout" />
-          <span>Setting</span>
+          <img src="./assets/images/setting-svgrepo-com.svg" alt="Logout" />
+          <span>Security</span>
         </div>
       </div>
 
@@ -524,7 +545,7 @@
 
       <!-- Profile Panel -->
       <div class="profile-panel">
-        <img src="https://placehold.co/20x20" alt="Profile" />
+        <img src="./assets/images/profile.png" alt="Profile" />
         <div class="profile-info">
           <h3>Nabeel Sohail</h3>
           <p>View Profile</p>
@@ -539,8 +560,7 @@
           <h4>Brand Performance & Auditor Control Center</h4>
         </div>
         <div class="header-sub-wrapper">
-          <img src="https://placehold.co/20x20" />
-          <img src="https://placehold.co/20x20" />
+          <img src="./assets/images/notification.svg" />
         </div>
       </div>
 
@@ -548,49 +568,39 @@
         <!-- Stats container-->
         <div class="mainContainer">
           <div class="auditer-content">
-
             <div class="title">
               <h2>Auditor Control Center</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est et massa consectetur iaculis. Donec non neque ac velit consectetur convallis.</p>
+              <p>
+                Monitor, Analyze And Report Consumer Insights For Optimal Brand
+                Transparency And Accountability
+              </p>
             </div>
 
             <div class="stat-container">
               <div class="stats left">
                 <div class="stat">
-                  <div class="stat-img">
-                    <img src="https://placehold.co/20x20" alt="Students" />
-                  </div>
                   <div class="stat-text">
-                    <h3>Students</h3>
+                    <h3>New Brands</h3>
                     <h4>100</h4>
                   </div>
                 </div>
                 <div class="stat">
-                  <div class="stat-img">
-                    <img src="https://placehold.co/20x20" alt="Students" />
-                  </div>
                   <div class="stat-text">
-                    <h3>Students</h3>
+                    <h3>Total Brands</h3>
                     <h4>100</h4>
                   </div>
                 </div>
               </div>
-              <div class="stats right" style="justify-content: end;">
+              <div class="stats right" style="justify-content: end">
                 <div class="stat">
-                  <div class="stat-img">
-                    <img src="https://placehold.co/20x20" alt="Students" />
-                  </div>
                   <div class="stat-text">
-                    <h3>Students</h3>
+                    <h3>New Audits</h3>
                     <h4>100</h4>
                   </div>
                 </div>
                 <div class="stat">
-                  <div class="stat-img">
-                    <img src="https://placehold.co/20x20" alt="Students" />
-                  </div>
                   <div class="stat-text">
-                    <h3>Students</h3>
+                    <h3>Total Audits</h3>
                     <h4>100</h4>
                   </div>
                 </div>
@@ -598,56 +608,40 @@
             </div>
 
             <div class="title-portal">
-              <hr>
+              <hr />
               <h2>Select Portal</h2>
-              <hr>
+              <hr />
             </div>
 
             <!-- Panels -->
             <div class="panels">
               <div class="card">
-                <div class="p">
-                  <p>
-                    Brand<br />
-                    Management
-                  </p>
+                <div class="icon-section">🔍</div>
+                <div class="text-section">
+                  Brands Management
                 </div>
-                <div class="access-panel">
-                  <p>Access Panel</p>
-                </div>
+                <div class="access-panel">Access Panel</div>
               </div>
               <div class="card">
-                <div class="p bg2">
-                  <p>
-                    Brand<br />
-                    Rankings
-                  </p>
+                <div class="icon-section">🔍</div>
+                <div class="text-section">
+                  Brands Rankings
                 </div>
-                <div class="access-panel">
-                  <p>Access Panel</p>
-                </div>
+                <div class="access-panel">Access Panel</div>
               </div>
               <div class="card">
-                <div class="p bg3">
-                  <p>
-                    Analytics &<br />
-                    Insights
-                  </p>
+                <div class="icon-section">🔍</div>
+                <div class="text-section">
+                  Analytics & Insights
                 </div>
-                <div class="access-panel">
-                  <p>Access Panel</p>
-                </div>
+                <div class="access-panel">Access Panel</div>
               </div>
               <div class="card">
-                <div class="p bg4">
-                  <p>
-                    Brand Audit<br />
-                    Reports
-                  </p>
+                <div class="icon-section">🔍</div>
+                <div class="text-section">
+                  Brands Audits Reports
                 </div>
-                <div class="access-panel">
-                  <p>Access Panel</p>
-                </div>
+                <div class="access-panel">Access Panel</div>
               </div>
             </div>
           </div>
